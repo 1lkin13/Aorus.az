@@ -1,0 +1,166 @@
+.admin-panel {
+    padding: 20px;
+    max-width: 800px;
+    margin:60px auto;
+  }
+  .admin-panel h1{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .add-button {
+    margin-bottom: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 60%;
+    max-width: 500px;
+    position: relative;
+  }
+  
+  .close {
+    color: #e60909;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .product-table th,
+  .product-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .product-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+  
+  .product-image {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .button-container {
+    margin-top: 20px;
+    text-align: right;
+  }
+  
+  .cancel-button,
+  .add-update-button,
+  .apply-button,
+  .edit-button,
+  .delete-button {
+    padding: 8px 16px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .cancel-button {
+    background-color: #dc3545!important;
+    color: #fff;
+  }
+  
+  .cancel-button:hover {
+    background-color: #c82333;
+  }
+  
+  .add-update-button {
+    background-color: #007bff!important;
+    color: #fff;
+  }
+  
+  .add-update-button:hover {
+    background-color: #06407e;
+  }
+  
+  .apply-button {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .apply-button:hover {
+    background-color: #218838;
+  }
+  
+  .edit-button {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .edit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  .input-container {
+    margin-bottom: 15px;
+  }
+  
+  .label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    color: #000;
+    border-radius: 4px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  .checkbox-input {
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  
