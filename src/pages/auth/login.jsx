@@ -1,11 +1,14 @@
-import React from 'react';
+import React from "react";
 
 export default function LoginPage() {
   return (
     <div>
       <section className="bg-gray-50 dark:bg-gray-900">
         <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-          <a href="#" className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
+          <a
+            href="#"
+            className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white"
+          >
             {/* Burada logo eklenebilir */}
           </a>
           <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
@@ -15,7 +18,12 @@ export default function LoginPage() {
               </h1>
               <form className="space-y-4 md:space-y-6" action="#">
                 <div>
-                  <label htmlFor="email" className="block mb-2 text-sm font-medium ml-2 text-gray-900 dark:text-white">Mail Adresi</label>
+                  <label
+                    htmlFor="email"
+                    className="block mb-2 text-sm font-medium ml-2 text-gray-900 dark:text-white"
+                  >
+                    Mail Adresi
+                  </label>
                   <input
                     type="email"
                     name="email"
@@ -26,7 +34,12 @@ export default function LoginPage() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="password" className="block mb-2 text-sm font-medium ml-2 text-gray-900 dark:text-white">Şifrə</label>
+                  <label
+                    htmlFor="password"
+                    className="block mb-2 text-sm font-medium ml-2 text-gray-900 dark:text-white"
+                  >
+                    Şifrə
+                  </label>
                   <input
                     type="password"
                     name="password"
@@ -40,7 +53,12 @@ export default function LoginPage() {
                   <div className="flex items-start">
                     {/* İste istediğin elementleri buraya ekle */}
                   </div>
-                  <a href="#" className="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500">Şifrəni unutmusan?</a>
+                  <a
+                    href="#"
+                    className="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500"
+                  >
+                    Şifrəni unutmusan?
+                  </a>
                 </div>
                 <button
                   type="submit"

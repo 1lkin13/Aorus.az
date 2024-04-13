@@ -1,43 +1,50 @@
-import { useState } from 'react';
-import { FaLaptop, FaDesktop, FaTabletAlt, FaHeadphones, FaPlus, FaMinus } from 'react-icons/fa';
+import { useState } from "react";
+import {
+  FaLaptop,
+  FaDesktop,
+  FaTabletAlt,
+  FaHeadphones,
+  FaPlus,
+  FaMinus,
+} from "react-icons/fa";
 
 const CategoryList = () => {
   const categories = [
     {
-      name: 'Laptop',
+      name: "Laptop",
       icon: <FaLaptop />,
-      subcategories: ['Gaming Laptop', 'Business Laptop', 'Ultrabook'],
+      subcategories: ["Gaming Laptop", "Business Laptop", "Ultrabook"],
     },
     {
-      name: 'Masaüstü',
+      name: "Masaüstü",
       icon: <FaDesktop />,
-      subcategories: ['Gaming Desktop', 'Office Desktop', 'Mini PC'],
+      subcategories: ["Gaming Desktop", "Office Desktop", "Mini PC"],
     },
     {
-        name: 'Masaüstü',
-        icon: <FaDesktop />,
-        subcategories: ['Gaming Desktop', 'Office Desktop', 'Mini PC'],
-      },
+      name: "Masaüstü",
+      icon: <FaDesktop />,
+      subcategories: ["Gaming Desktop", "Office Desktop", "Mini PC"],
+    },
     {
-      name: 'Tablet',
+      name: "Tablet",
       icon: <FaTabletAlt />,
-      subcategories: ['iPad', 'Android Tablet', 'Windows Tablet'],
+      subcategories: ["iPad", "Android Tablet", "Windows Tablet"],
     },
     {
-        name: 'Tablet',
-        icon: <FaTabletAlt />,
-        subcategories: ['iPad', 'Android Tablet', 'Windows Tablet'],
-      },
+      name: "Tablet",
+      icon: <FaTabletAlt />,
+      subcategories: ["iPad", "Android Tablet", "Windows Tablet"],
+    },
     {
-      name: 'Aksesuarlar',
+      name: "Aksesuarlar",
       icon: <FaHeadphones />,
-      subcategories: ['Kulaklık', 'Klavye', 'Fare', 'Monitör'],
+      subcategories: ["Kulaklık", "Klavye", "Fare", "Monitör"],
     },
     {
-        name: 'Aksesuarlar',
-        icon: <FaHeadphones />,
-        subcategories: ['Kulaklık', 'Klavye', 'Fare', 'Monitör'],
-      },
+      name: "Aksesuarlar",
+      icon: <FaHeadphones />,
+      subcategories: ["Kulaklık", "Klavye", "Fare", "Monitör"],
+    },
   ];
 
   const [expandedCategory, setExpandedCategory] = useState(null);
@@ -52,7 +59,9 @@ const CategoryList = () => {
 
   return (
     <div className="flex flex-col gap-1 pt-10 w-72 m-auto">
-      <div className=" font-medium mb-2 text-white text-center font-sans text-3xl">Kategoriyalar</div>
+      <div className=" font-medium mb-2 text-white text-center font-sans text-3xl">
+        Kategoriyalar
+      </div>
       {categories.map((category, index) => (
         <div key={index} className="relative">
           <div
@@ -66,14 +75,14 @@ const CategoryList = () => {
             </div>
           </div>
           {expandedCategory === index && (
-          <div className="absolute z-30 top-full right-0    w-56 mt-1 p-2 font-semibold bg-white dark:bg-white-800 rounded-lg shadow-md border dark:border-1 border-black ">
-          {category.subcategories.map((subCategory, subIndex) => (
-            <div
-              key={subIndex}
-              className="text-xl py-1 cursor-pointer hover:bg-black-100 dark:hover:text-purple-900"
-            >
-              {subCategory}
-            </div>
+            <div className="absolute z-30 top-full right-0    w-56 mt-1 p-2 font-semibold bg-white dark:bg-white-800 rounded-lg shadow-md border dark:border-1 border-black ">
+              {category.subcategories.map((subCategory, subIndex) => (
+                <div
+                  key={subIndex}
+                  className="text-xl py-1 cursor-pointer hover:bg-black-100 dark:hover:text-purple-900"
+                >
+                  {subCategory}
+                </div>
               ))}
             </div>
           )}

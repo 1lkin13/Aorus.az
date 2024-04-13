@@ -16,7 +16,7 @@
   opacity: 1;
 }
 .loader-svg {
-scale:10px;
+  scale: 10px;
   animation: pulse-svg 2s linear infinite;
   filter: drop-shadow(0 0 10px white); /* Havalı ışıklar için gölge efekti */
 }
