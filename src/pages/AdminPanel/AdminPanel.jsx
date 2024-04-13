@@ -1,14 +1,27 @@
-import React, { useState } from 'react';
-import '../css/AdminPanel.css';
+import React, { useId, useState ,useEffect} from 'react';
+import './AdminPanel.css';
+import api from '../../api/crud'
 
-const AdminPanel = ({ products, onUpdate, onAdd, onDelete }) => {
-  const [newProduct, setNewProduct] = useState({
-    id: '',
-    title: '',
-    price: '',
-    image: '',
-    stock: false,
-  });
+const AdminPanel = () => {
+    const [newProduct, setNewProduct] = useState({
+        id: '',
+        title: '',
+        price: '',
+        image: '',
+        stock: false,
+      });
+const[products,setProducts]=useState();
+const getProducts=async()=>{
+    const response=await api.get("/products")
+    if (response.data.length) {
+      setProducts(response.data)
+      
+    }
+    }
+    useEffect(() => {
+        getProducts()
+    
+    }, []);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = (product = null) => {
@@ -29,31 +42,23 @@ const AdminPanel = ({ products, onUpdate, onAdd, onDelete }) => {
   const closeModal = () => {
     setIsModalOpen(false);
   };
+const handleAdd=async(e)=>{
+    e.preventDefault()
+     const id =useId()
+     const request= {
+        id:id,
+        ...newProduct
+     }
+    const response= await api.post("/products",request)
+    
+    console.log(request)
+}
+const handleUpdate=async()=>{
 
-  const handleAdd = () => {
-    onAdd(newProduct);
-    const updatedProducts = [...products, newProduct];
-    onUpdate(updatedProducts);
-    closeModal();
-    alert('Ürün başarıyla eklendi!');
-  };
+}
+const handleRemove=async()=>{
 
-  const handleDelete = (id) => {
-    const confirmDelete = window.confirm('Bu ürünü silmek istediğinizden emin misiniz?');
-    if (confirmDelete) {
-      const updatedProducts = products.filter((product) => product.id !== id);
-      onDelete(id);
-      onUpdate(updatedProducts);
-      alert('Ürün başarıyla silindi!');
-    }
-  };
-
-  const handleUpdate = () => {
-    onUpdate(newProduct);
-    closeModal();
-    alert('Ürün başarıyla güncellendi!');
-  };
-
+}
   return (
     <div className="admin-panel">
       <h1>Admin Panel</h1>
@@ -136,7 +141,7 @@ const AdminPanel = ({ products, onUpdate, onAdd, onDelete }) => {
           </tr>
         </thead>
         <tbody>
-          {products.map((product) => (
+          {products && products.map((product) => (
             <tr key={product.id}>
               <td>{product.id}</td>
               <td>{product.title}</td>
