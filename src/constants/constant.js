@@ -2,7 +2,7 @@ export const NavbarLinks = [
   { value: "/", label: "Home" },
   { value: "/about", label: "About" },
   { value: "/contact", label: "Contact" },
-  { value: "/product", label: "Products" },
+  { value: "/productspage", label: "Products" },
   { value: "/admin", label: "Admin" },
   { value: "/login", label: "Login" },
 ];
