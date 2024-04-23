@@ -1,13 +1,29 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { NavbarLinks } from "../constants/constant";
 import logo from "../assets/images/aoruslogo.svg";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setNav(true);
+      } else {
+        setNav(false);
+      }
+    };
 
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <nav className="bg-white  w-full  fixed top-0 z-40">
+    <nav className={`border-b-2  ${nav ? "border-purple-600 shadow-md" : "border-white"}`}>
+
+
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex   h-20 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center  sm:hidden">

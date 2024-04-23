@@ -9,7 +9,7 @@ import '../css/Marquee.css';
 
 const MarqueeRight = () => {
   return (
-    <div className="mt-28  overflow-hidden w-52 h-[460px] rounded-md">
+    <div className="mt-28  w-52 h-[460px] rounded-md">
       <div className="flex mt-16 space-x-4 justify-around animate-marquee h-20">
         <img src={TufLogo} alt="ASUS Logo" className="w-50 h-auto" /> 
       </div>

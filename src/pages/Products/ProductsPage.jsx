@@ -2,11 +2,13 @@ import React from 'react';
 import Slide from "../../components/slide.jsx";
 import MarqueeLeft from "../../components/Marquee-left.jsx"; 
 import MarqueeRight from "../../components/Marquee-right.jsx"; 
+import Footer from "../../components/footer";
+
 
 
 export default function ProductsPage() {
-  return (
-    <div className="flex  mt-[19px] justify-center items-center h-screen bg-black">
+  return (<>
+    <div className="flex  justify-center items-center h-screen bg-black">
       <div className="w-1/3 h-full flex justify-around">
         <MarqueeLeft /> 
       </div>
@@ -19,5 +21,8 @@ export default function ProductsPage() {
         <MarqueeRight /> 
       </div>
     </div>
+
+<Footer />
+</>
   );
 }

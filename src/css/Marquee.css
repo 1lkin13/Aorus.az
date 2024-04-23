@@ -10,7 +10,7 @@
   }
   
   .animate-marquee:nth-child(even) {
-    animation-delay: 2.5s; /* Çift sıradaki logolar için animasyon gecikmesi */
+    animation-delay: 2s; /* Çift sıradaki logolar için animasyon gecikmesi */
   }
   *{
     margin:0;
