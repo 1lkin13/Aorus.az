@@ -1,10 +1,10 @@
 import React from "react";
-import logo from "../assets/images/aoruslogo1.svg";
+import logo from "../assets/images/aoruslogo.svg";
 
 const Footer = () => {
   return (
-    <div>
-      <footer className=" border-t-2 border-purple-600 shadow-md">
+    <div >
+      <footer className="border-t-2 border-purple-600 shadow-md">
         <div className="mx-auto grid max-w-screen-xl gap-y-8 gap-x-12 px-4 py-10 sm:px-20 md:grid-cols-2 xl:grid-cols-4 xl:px-10">
           <div className="max-w-sm">
             <div className="mb-6 flex h-10 items-center space-x-2">

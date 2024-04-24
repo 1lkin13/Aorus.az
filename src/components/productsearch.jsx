@@ -5,13 +5,11 @@ const Productsearch = ({ onSearch }) => {
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
-    onSearch(event.target.value); // Ana bileşene arama terimini iletiyoruz
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Burada arama butonuna tıklama işlemi gerekiyorsa yapılacaklar
-    // Örneğin: onSearch(searchTerm);
+    onSearch(searchTerm); // Ana bileşene arama terimini iletiyoruz
   };
 
   return (
@@ -45,7 +43,7 @@ const Productsearch = ({ onSearch }) => {
         />
         <button
           type="submit"
-          className="absolute right-0 mr-1 inline-flex h-12 items-center justify-center rounded-lg bg-gray-900 px-10 font-medium text-white focus:ring-4 hover:bg-gray-700"
+          className="absolute right-0 mr-1 inline-flex h-12 items-center justify-center rounded-lg bg-gray-900 px-6 font-medium text-white focus:ring-4 hover:bg-gray-700"
         >
           Search
         </button>

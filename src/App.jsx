@@ -7,7 +7,8 @@ import Preloader from "./utils/Preloader.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
 import Login from "./pages/auth/login.jsx";
 import Products from "./pages/Products/ProductsPage.jsx"
-import AdminPanel from "./pages/AdminPanel/AdminPanel.jsx"; // Update the import path
+import AdminPanel from "./pages/AdminPanel/AdminPanel.jsx"; 
+import ReadMore from "./pages/ReadMore/ReadMore.jsx";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
           <Route path="/productspage" element={<Products />} />
           <Route path="/login" element={<Login />} />
           <Route path="/admin" element={<AdminPanel />} />
+          <Route path="/readmore/:id" element={<ReadMore />} />
+
+          
         </Routes>
         {/* </Preloader> */}
       </div>

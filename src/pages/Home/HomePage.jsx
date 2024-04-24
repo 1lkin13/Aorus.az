@@ -7,23 +7,26 @@ import Filter from "../../components/filter";
 import Sectionone from "../../components/sectionone";
 import Footer from "../../components/footer";
 import api from "../../api/crud";
+
 const HomePage = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [productlist, setProductList] = useState();
+  const [productlist, setProductList] = useState([]);
 
   const handleSearch = (searchTerm) => {
     setSearchTerm(searchTerm);
   };
 
-  const filteredProducts = fakeData.filter((product) =>
-    product.title.toLowerCase().includes(searchTerm.toLowerCase()),
+  const filteredProducts = productlist.filter((product) =>
+    product.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
   const getProducts = async () => {
     const response = await api.get("/products");
     if (response.data.length) {
       setProductList(response.data);
     }
   };
+
   useEffect(() => {
     getProducts();
   }, []);
@@ -41,14 +44,15 @@ const HomePage = () => {
           <PriceFilter />
         </div>
 
-        <div className="flex flex-wrap justify-around bg-neutral-100">
-          {productlist &&
-            productlist.map((product) => (
-              <Card key={product.id} product={product} />
-            ))}
+        <div className="flex flex-wrap h-auto justify-around bg-white">
+          {filteredProducts.map((product) => (
+            <Card key={product.id} product={product} />
+          ))}
         </div>
       </div>
-      <Footer />
+       
+       <div className="mt-20">  < Footer  /></div>
+    
     </div>
   );
 };

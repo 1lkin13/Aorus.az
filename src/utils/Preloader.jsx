@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../css/Preloader.css";
-import loaderSVG from "../assets/images/aoruslogo1.svg";
+import loader from "../assets/images/preloader.svg";
 const Preloader = ({ children }) => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -15,7 +15,7 @@ const Preloader = ({ children }) => {
   return loading ? (
     <div className={`preloader ${"show"}`}>
       <div className="svg-container">
-        <img src={loaderSVG} alt="Loading..." className="loader-svg" />
+        <img src={loader} alt="Loading..." className="loader-svg" />
       </div>
     </div>
   ) : (

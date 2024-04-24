@@ -1,4 +1,4 @@
-import React, { useId, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./AdminPanel.css";
 import api from "../../api/crud";
 
@@ -7,21 +7,21 @@ const AdminPanel = () => {
     id: "",
     title: "",
     price: "",
+    description: "",
     image: "",
     stock: false,
   });
 
   const [products, setProducts] = useState([]);
+  const [id, setId] = useState(1);
   const [pagination, setPagination] = useState({
     currentPage: 1,
     productsPerPage: 3,
   });
 
   const getProducts = async () => {
-    const response = await api.get(`/products`);
-    if (response.data.length) {
-      setProducts(response.data);
-    }
+    const response = await api.get("/products");
+    setProducts(response.data);
   };
 
   useEffect(() => {
@@ -38,6 +38,7 @@ const AdminPanel = () => {
         id: "",
         title: "",
         price: "",
+        description: "",
         image: "",
         stock: false,
       });
@@ -49,36 +50,31 @@ const AdminPanel = () => {
     setIsModalOpen(false);
   };
 
-  const id = useId(); // Call useId inside a function component
-
   const handleAdd = async (e) => {
     e.preventDefault();
     const request = {
       ...newProduct,
-      id: id,
+      id: String(id),
     };
-
+    setId(id + 1);
     await api.post("/products", request);
-
     setNewProduct({});
     getProducts();
-    closeModal(); // Modalı kapat
+    closeModal();
   };
 
   const handleUpdate = async (e) => {
     e.preventDefault();
     await api.put(`/products/${newProduct.id}`, newProduct);
-    setNewProduct({});
     getProducts();
-    closeModal(); // Modalı kapat
+    closeModal();
   };
 
   const handleDelete = async (id) => {
     await api.delete(`/products/${id}`);
     setNewProduct({});
     getProducts();
-    closeModal(); // Modalı kapat
-
+    closeModal();
   };
 
   // Pagination Functions
@@ -91,9 +87,8 @@ const AdminPanel = () => {
   };
 
   const count = (number) => {
-    const countNum = ((pagination.currentPage - 1) * pagination.productsPerPage) + number;
-    return countNum;
-  }
+    return (pagination.currentPage - 1) * pagination.productsPerPage + number + 1;
+  };
 
   return (
     <div className="admin-panel">
@@ -104,57 +99,64 @@ const AdminPanel = () => {
       </button>
 
       {isModalOpen && (
-        <div className="modal">
+        <div className="modal ">
           <div className="modal-content">
             <span className="close" onClick={closeModal}>
               &times;
             </span>
-            <h2>Ürün {newProduct.id ? "Güncelle" : "Ekle"}</h2>
+            <h2 className="font-bold text-purple-700">{newProduct.id ?  " Düzəlt" : "Əlavə Et"}</h2>
             <form onSubmit={newProduct.id ? handleUpdate : handleAdd}>
               <div className="input-container">
                 <label className="label" htmlFor="title">
-                  Məhsulun Adı:
+                  Məhsul Adı:
                 </label>
                 <input
                   type="text"
                   id="title"
                   className="input-field"
                   value={newProduct.title}
-                  onChange={(e) =>
-                    setNewProduct({ ...newProduct, title: e.target.value })
-                  }
+                  onChange={(e) => setNewProduct({ ...newProduct, title: e.target.value })}
                   required
                 />
               </div>
 
               <div className="input-container">
                 <label className="label" htmlFor="price">
-                  Qiymət:
+                 Qiyməti:
                 </label>
                 <input
-                  type="text"
+                  type="number"
                   id="price"
                   className="input-field"
                   value={newProduct.price}
-                  onChange={(e) =>
-                    setNewProduct({ ...newProduct, price: e.target.value })
-                  }
+                  onChange={(e) => setNewProduct({ ...newProduct, price: e.target.value })}
+                  required
+                />
+              </div>
+
+              <div className="input-container">
+                <label className="label" htmlFor="description">
+                 Haqqında:
+                </label>
+                <textarea
+                  id="description"
+                  className="input-field"
+                  value={newProduct.description}
+                  onChange={(e) => setNewProduct({ ...newProduct, description: e.target.value })}
                   required
                 />
               </div>
 
               <div className="input-container">
                 <label className="label" htmlFor="image">
-                  Şəkilin URL:
+                  Şəkil URL:
                 </label>
                 <input
                   type="text"
                   id="image"
                   className="input-field"
                   value={newProduct.image}
-                  onChange={(e) =>
-                    setNewProduct({ ...newProduct, image: e.target.value })
-                  }
+                  onChange={(e) => setNewProduct({ ...newProduct, image: e.target.value })}
                   required
                 />
               </div>
@@ -164,26 +166,20 @@ const AdminPanel = () => {
                   Stok Statusu:
                   <input
                     type="checkbox"
-                    className="checkbox-input"
+                    className="checkbox-input ml-5"
                     checked={newProduct.stock}
-                    onChange={(e) =>
-                      setNewProduct({ ...newProduct, stock: e.target.checked })
-                    }
+                    onChange={(e) => setNewProduct({ ...newProduct, stock: e.target.checked })}
                   />
-                  {newProduct.stock ? "Stok Var" : "Stok Yoxdu"}
+                  {newProduct.stock ? "Var" : "Yoxdur"}
                 </label>
               </div>
 
               <div className="button-container">
-                <button
-                  type="button"
-                  onClick={closeModal}
-                  className="cancel-button"
-                >
+                <button type="button" onClick={closeModal} className="cancel-button">
                   Ləğv Et
                 </button>
                 <button type="submit" className="add-update-button">
-                  {newProduct.id ? "Düzəlt" : "Əlavə Et"}
+                  {newProduct.id ? "Düzəliş Et" : "Əlavə Et"}
                 </button>
               </div>
             </form>
@@ -193,40 +189,34 @@ const AdminPanel = () => {
 
       <table className="product-table">
         <thead>
-          <tr>
-            <th>ID</th>
-            <th>Məhsulun Adı</th>
+          <tr  >
+            <th >ID</th>
+            <th >Məhsulun Adı</th>
             <th>Qiyməti</th>
-            <th>Rəsmi</th>
-            <th>Stok Vəziyyəti</th>
-            <th>İşlemler</th>
+            <th>Şəkli</th>
+            <th>Stok Statusu</th>
+            <th>Əməliyyatlar</th>
           </tr>
         </thead>
         <tbody>
-          {currentProducts.map((product,index) => (
+          {currentProducts.map((product, index) => (
             <tr key={product.id}>
-              <td>{count(index+1)}</td>
+              <td>{count(index)}</td>
               <td>{product.title}</td>
               <td>{product.price}</td>
               <td>
-                <img
-                  src={product.image}
-                  alt={product.title}
-                  className="product-image"
-                />
+                <img src={product.image} alt={product.title} className="product-image" />
               </td>
-              <td>{product.stock ? "Stok Var" : "Stok Yoxdu"}</td>
+              <td className="text-center font-bold text-2xl">
+  <span style={{ color: product.stock ? 'green' : 'red' }}>
+    {product.stock ? "✔" : "✘"}
+  </span>
+</td>
               <td>
-                <button
-                  onClick={() => openModal(product)}
-                  className="edit-button"
-                >
-                  Düzəlt
+                <button onClick={() => openModal(product)} className="edit-button">
+                  Düzenle
                 </button>
-                <button
-                  onClick={() => handleDelete(product.id)}
-                  className="delete-button"
-                >
+                <button onClick={() => handleDelete(product.id)} className="delete-button">
                   Sil
                 </button>
               </td>
