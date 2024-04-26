@@ -1,60 +1,98 @@
 {
   "products": [
     {
-      "id": "0",
-      "title": "HP Pavillion",
-      "description": "Yoxlama Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum maxime doloremque nam porro numquam quam non amet sit ab! Veniam soluta facere, nulla quae dolor dolorum saepe perspiciatis quaerat laboriosam.",
-      "price": 149.99,
-      "image": "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08691955.png?impolicy=Png_Res",
-      "stock": false
-    },
-    {
-      "id": "2",
-      "title": "Acer Prediator",
-      "price": "345",
-      "description": "oyun komputerleri,komputer qiymetleri,komputer satisi,komputerin texniki təminatı,komputer alışı,komputer magazasi,komputer yığılması,oyun komputer baku,komputer yığmaq,video kart qiymeti,sistem bloku satisi,rtx 4090,rtx 4080 qiymeti,azerbaycan komputer qiymetleri",
-      "image": "https://images.acer.com/is/image/acer/predator-helios-16-ph16-71-perkey-backlit-on-wallpaper-black-01-1?$Line-Overview-M1-M2-S$",
+      "id": "9",
+      "title": "HP OMEN 16-k0033dx 74S79UA",
+      "price": "2799",
+      "discountedPrice": "2599",
+      "description": "CPU: Intel® Core™ i9-12900H\nRAM: 16 GB DDR5 4800MHz\nSSD: 1 TB M.2 NVMe™ PCIe®\nGFX: NVIDIA GeForce RTX 3060 6GB\nLCD: 16.1\" QHD IPS 165Hz\nOS: Windows 11 Home\nВес: 2.35 Kq\nP/N: 74S79UA\nГарантия: 12 Месяцев",
+      "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/7ca4e852-65f2-4392-86a7-4f72d2b6a397.webp",
       "stock": true
     },
     {
-      "id": "3",
-      "title": "HP Pavillion",
-      "description": "Yoxlama Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum maxime doloremque nam porro numquam quam non amet sit ab! Veniam soluta facere, nulla quae dolor dolorum saepe perspiciatis quaerat laboriosam.",
-      "price": 149.99,
-      "image": "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08691955.png?impolicy=Png_Res",
-      "stock": false
-    },
-    {
-      "id": "4",
-      "title": "Asus Rog",
-      "price": "1234",
-      "description": "oyun komputerleri,komputer qiymetleri,komputer satisi,komputerin texniki təminatı,komputer alışı,komputer magazasi,komputer yığılması,oyun komputer baku,komputer yığmaq,video kart qiymeti,sistem bloku satisi,rtx 4090,rtx 4080 qiymeti,azerbaycan komputer qiymetleri",
-      "image": "https://aztechshop.az/image/cache/catalog/Asus%20Rog/2023%20ASUS%20ROG%20Strix%20G18%20G814JI,%20JV,%20JU,%20JZ%20Eclipse%20Gray%20Perkey%20Lighting%20(5)(Sayt)-1000x832.png",
+      "id": "10",
+      "title": "HP Omen 17-ck1025ci 6H762EA",
+      "price": "2800",
+      "discountedPrice": "2700",
+      "description": "CPU: Intel® Core™ i7-12800HX\nRAM: 16 GB DDR5 4800MHz\nSSD: 1 TB M.2 NVMe™ PCIe®\nGFX: NVIDIA GeForce RTX 3080Ti 16GB\nLCD: 17.3\" QHD IPS 165Hz 3ms\nOS: FreeDos\nВес: 2.78 Kq\nP/N: 6H762EA",
+      "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/6161fba4-6a68-4290-bbfa-d35bd1d565ec.webp",
+      "additionalImages": [
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/294ce458-e9e3-4003-b26c-cf387b56d853.webp",
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/06e5b5f8-7996-4dbe-b0d0-f19561dab600.webp"
+      ],
       "stock": true
     },
     {
-      "id": "5",
-      "title": "Acer Prediator",
-      "price": "345",
-      "description": "oyun komputerleri,komputer qiymetleri,komputer satisi,komputerin texniki təminatı,komputer alışı,komputer magazasi,komputer yığılması,oyun komputer baku,komputer yığmaq,video kart qiymeti,sistem bloku satisi,rtx 4090,rtx 4080 qiymeti,azerbaycan komputer qiymetleri",
-      "image": "https://images.acer.com/is/image/acer/predator-helios-16-ph16-71-perkey-backlit-on-wallpaper-black-01-1?$Line-Overview-M1-M2-S$",
-      "stock": true
+      "id": "1999",
+      "title": "MSI Crosshair 15",
+      "price": "3249",
+      "discountedPrice": "3139",
+      "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/56374dee-9df7-48be-8e1e-dfd6faa31eb5.webp",
+      "additionalImages": [
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/b577dde4-c2b6-4044-af1e-3abbf36335c8.webp",
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/260e94de-5a2e-4564-a57c-b7134c8d2666.webp"
+      ],
+      "stock": false,
+      "CPU": "Intel® Core™ i7-12700H",
+      "RAM": "16 GB DDR4",
+      "SSD": "1 TB M.2 NVMe™ PCIe®",
+      "GFX": " NVIDIA GeForce RTX 3070Ti 8GB",
+      "LCD": " 15.6\" FHD IPS 144Hz",
+      "OS": "Windows 11 Home"
     },
     {
-      "id": "7",
-      "title": "HP Pavillion",
-      "description": "Yoxlama Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum maxime doloremque nam porro numquam quam non amet sit ab! Veniam soluta facere, nulla quae dolor dolorum saepe perspiciatis quaerat laboriosam.",
-      "price": 149.99,
-      "image": "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08691955.png?impolicy=Png_Res",
-      "stock": false
+      "id": "11",
+      "title": "MSI Crosshair 15",
+      "price": "3249",
+      "discountedPrice": "3139",
+      "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/56374dee-9df7-48be-8e1e-dfd6faa31eb5.webp",
+      "additionalImages": [
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/b577dde4-c2b6-4044-af1e-3abbf36335c8.webp",
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/260e94de-5a2e-4564-a57c-b7134c8d2666.webp"
+      ],
+      "stock": false,
+      "CPU": "Intel® Core™ i7-12700H",
+      "RAM": "16 GB DDR4",
+      "SSD": "1 TB M.2 NVMe™ PCIe®",
+      "GFX": " NVIDIA GeForce RTX 3070Ti 8GB",
+      "LCD": " 15.6\" FHD IPS 144Hz",
+      "OS": "Windows 11 Home"
+    },
+    {
+      "id": "12",
+      "title": "MSI Crosshair 15",
+      "price": "3249",
+      "discountedPrice": "3139",
+      "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/56374dee-9df7-48be-8e1e-dfd6faa31eb5.webp",
+      "additionalImages": [
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/b577dde4-c2b6-4044-af1e-3abbf36335c8.webp",
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/260e94de-5a2e-4564-a57c-b7134c8d2666.webp"
+      ],
+      "stock": false,
+      "CPU": "Intel® Core™ i7-12700H",
+      "RAM": "16 GB DDR4",
+      "SSD": "1 TB M.2 NVMe™ PCIe®",
+      "GFX": " NVIDIA GeForce RTX 3070Ti 8GB",
+      "LCD": " 15.6\" FHD IPS 144Hz",
+      "OS": "Windows 11 Home"
     },
     {
       "id": "1",
-      "title": "test2",
-      "price": "1245",
-      "description": "sasasa",
-      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/refurb-mbp13-space-m1-2020?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1628621779000",
-      "stock": false
+      "title": "Lenovo Legion 5",
+      "price": "2199",
+      "discountedPrice": "1999",
+      "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/8a5ae89e-d900-4b69-839d-81db891ccd0e.webp",
+      "additionalImages": [
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/8d963bb4-432a-4238-a228-2c000e5d5da5.webp",
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/2584182d-cd0c-4f42-8cf8-cd3b1f99017b.webp"
+      ],
+      "stock": false,
+      "CPU": "Intel® Core™ i5-12500H",
+      "RAM": "16 GB DDR5 4800MHz",
+      "SSD": "512 GB M.2 NVMe™ PCIe®",
+      "GFX": "NVIDIA GeForce RTX 3050Ti 4GB",
+      "LCD": " 15.6\" FHD (1920x1080) IPS",
+      "OS": "FreeDos"
     }
   ]
 }

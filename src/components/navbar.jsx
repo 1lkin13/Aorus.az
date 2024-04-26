@@ -102,7 +102,7 @@ const Navbar = () => {
               Search
             </label>
            
-            <button
+            {/* <button
               type="submit"
               className="py-3 px-4 mt-2 text-m font-medium text-white  rounded-lg border border-black hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-black dark:hover:bg-gray-900 dark:focus:ring-blue-800"
             >
@@ -111,7 +111,7 @@ const Navbar = () => {
           Admin Hesabına Giriş
 
             </Link>
-            </button>
+            </button> */}
           </form>
         </div>
       </div>

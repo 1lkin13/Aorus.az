@@ -9,7 +9,7 @@ import '../css/Marquee.css';
 
 const MarqueeLeft = () => {
   return (
-    <div className="mt-28  col-auto w-52 h-[460px]">
+    <div className="mt-28   col-auto w-52 h-[460px]">
       <div className="flex mt-16  justify-around animate-marquee h-20">
         <img src={AsusLogo} alt="ASUS Logo" className="w-24 h-12" /> 
       </div>

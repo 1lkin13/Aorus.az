@@ -2,15 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Card = ({ product }) => {
-  const { id, image, title, price, stock } = product;
+  const { id, image, title, price, discountedPrice, stock } = product;
 
   return ( 
     <>
-      <article className=" cursor-pointer relative w-72 mt-10 flex flex-col overflow-hidden rounded-lg border hover:shadow-purple-900 hover:scale-105 transition-transform duration-1000  shadow-md">
+      <article className="cursor-pointer relative w-72 mt-10 flex flex-col overflow-hidden rounded-lg border hover:shadow-purple-900 hover:scale-105 transition-transform duration-1000 shadow-md">
         <div className="aspect-square h-56 pt-0 overflow-hidden">
           <img
             className="h-50 w-64 m-auto object-cover object-center transition-all duration-300 group-hover:scale-125"
-            src={product.image}
+            src={image}
             alt=""
           />
         </div>
@@ -20,16 +20,19 @@ const Card = ({ product }) => {
           </p>
         </div>
         <div className="my-4 mx-auto flex w-10/12 flex-col items-start justify-between"> 
-          <h3 className="mb-1 text-m text-center font-semibold text-black-400">{product.title}</h3>
-          <div className="mb-2  justify-between items-center">
+          <h3 className="mb-1 text-m text-center font-semibold text-black-400">{title}</h3>
+          <div className="mb-2 justify-between items-center">
             <div className=""> 
-            <del className="text-m text-red-400"> $79.00 </del>
-            <div className=" flex justify-between items-center">
-              <p className="text-xl font-semibold">{product.price} Azn</p>
-             
-  <span  className="ml-20 text-l font-bold items-center" style={{ color: product.stock ? 'green' : 'red' }}>
-    {product.stock ? " Stok ✔" : "Stok ✘"}
-  </span>
+              {discountedPrice && (
+                <del className="text-m text-red-400"> {price} </del>
+              )}
+              <div className=" flex justify-between items-center">
+                <p className="text-xl font-semibold">
+                  {discountedPrice ? discountedPrice : price} Azn
+                </p>
+                <span className="ml-20 text-l font-bold items-center" style={{ color: stock ? 'green' : 'red' }}>
+                  {stock ? " Stok ✔" : "Stok ✘"}
+                </span>
               </div>
             </div>
           </div>

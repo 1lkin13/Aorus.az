@@ -1,19 +1,21 @@
-@keyframes marquee {
-    0% { transform: translateY(0); opacity: 0; }
-    20%, 90% { transform: translateY(-50%); opacity: 1; }
-    100% { transform: translateY(-100%); opacity: 0; }
-  }
-  
-  .animate-marquee {
-    position: relative;
-    animation: marquee 5s ease-in-out infinite; /* Animasyon süresini ve zamanlama fonksiyonunu değiştirdik */
-  }
-  
-  .animate-marquee:nth-child(even) {
-    animation-delay: 2s; /* Çift sıradaki logolar için animasyon gecikmesi */
-  }
-  *{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-  }
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.animate-marquee {
+  position: relative;
+  transform: translateY(0);
+  animation: marquee 5s ease-in-out infinite; /* Animasyon süresini ve zamanlama fonksiyonunu değiştirdik */
+}
+
+/* .animate-marquee:nth-child(even) {
+    animation-delay: 5s;
+} */
+
+  @keyframes marquee {
+      0% { transform: translateY(0); opacity: 0; }
+      20%, 90% { transform: translateY(-50%); opacity: 1; }
+      100% { transform: translateY(-100%); opacity: 0; }
+    }

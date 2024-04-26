@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Outlet } from "react-router-dom";
 import { NavbarLinks } from "./constants/constant";
 import Navbar from "./components/navbar"; // Update the import path
 import HomePage from "./pages/Home/HomePage.jsx";
@@ -15,15 +15,22 @@ function App() {
     <Router>
       <div className="app">
         {/* <Preloader> */}
-        <Navbar links={NavbarLinks} />
+        
         <Routes>
+          <Route element={
+            <>
+            <Navbar links={NavbarLinks} />
+            <Outlet/>
+            </>
+          }>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/productspage" element={<Products />} />
+          <Route path="/readmore/:id" element={<ReadMore />} />
+          </Route>
           <Route path="/login" element={<Login />} />
           <Route path="/admin" element={<AdminPanel />} />
-          <Route path="/readmore/:id" element={<ReadMore />} />
 
           
         </Routes>
