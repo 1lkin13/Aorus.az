@@ -1,13 +1,13 @@
 .review {
-    --clr-primary-1: hsl(205, 86%, 17%);
-    --clr-primary-5: hsl(205, 78%, 60%);
-    --clr-primary-7: hsl(205, 90%, 76%);
-    --clr-primary-10: hsl(205, 100%, 96%);
-    --clr-grey-1: hsl(209, 61%, 16%);
-    --clr-grey-5: hsl(210, 22%, 49%);
+    --clr-primary-1: hsl(0, 0%, 100%);
+    --clr-primary-5: hsl(273, 78%, 60%);
+    --clr-primary-7: hsl(277, 85%, 26%);
+    --clr-primary-10: hsl(277, 100%, 95%);
+    --clr-grey-1: hsl(282, 76%, 84%);
+    --clr-grey-5: hsl(269, 86%, 86%);
     --clr-grey-10: hsl(210, 36%, 96%);
     --clr-white: #fff;
-    --clr-black: #222;
+    --clr-black: #ffffff;
     --transition: all 0.3s linear;
     --radius: 0.25rem;
     --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);

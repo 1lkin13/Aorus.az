@@ -32,7 +32,7 @@
         "https://deltastorephotos.s3.eu-central-1.amazonaws.com/b577dde4-c2b6-4044-af1e-3abbf36335c8.webp",
         "https://deltastorephotos.s3.eu-central-1.amazonaws.com/260e94de-5a2e-4564-a57c-b7134c8d2666.webp"
       ],
-      "stock": false,
+      "stock": true,
       "CPU": "Intel® Core™ i7-12700H",
       "RAM": "16 GB DDR4",
       "SSD": "1 TB M.2 NVMe™ PCIe®",
@@ -59,25 +59,7 @@
       "OS": "Windows 11 Home"
     },
     {
-      "id": "12",
-      "title": "MSI Crosshair 15",
-      "price": "3249",
-      "discountedPrice": "3139",
-      "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/56374dee-9df7-48be-8e1e-dfd6faa31eb5.webp",
-      "additionalImages": [
-        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/b577dde4-c2b6-4044-af1e-3abbf36335c8.webp",
-        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/260e94de-5a2e-4564-a57c-b7134c8d2666.webp"
-      ],
-      "stock": false,
-      "CPU": "Intel® Core™ i7-12700H",
-      "RAM": "16 GB DDR4",
-      "SSD": "1 TB M.2 NVMe™ PCIe®",
-      "GFX": " NVIDIA GeForce RTX 3070Ti 8GB",
-      "LCD": " 15.6\" FHD IPS 144Hz",
-      "OS": "Windows 11 Home"
-    },
-    {
-      "id": "1",
+      "id": "2099",
       "title": "Lenovo Legion 5",
       "price": "2199",
       "discountedPrice": "1999",
@@ -93,6 +75,96 @@
       "GFX": "NVIDIA GeForce RTX 3050Ti 4GB",
       "LCD": " 15.6\" FHD (1920x1080) IPS",
       "OS": "FreeDos"
+    },
+    {
+      "id": "3000",
+      "title": "MSI Cyborg 15 A13VE-218US 9S7-15K111-218",
+      "price": "2379",
+      "discountedPrice": "2076",
+      "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/MSI%20Cyborg%2015%20A12VF-021SG%209S7-15K111-021_1ze94.webp",
+      "additionalImages": [
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/MSI%20Cyborg%2015%20A12VF-021SG%209S7-15K111-021_4mlrP.webp",
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/MSI%20Cyborg%2015%20A12VF-021SG%209S7-15K111-021_2JVyc.webp"
+      ],
+      "stock": false,
+      "CPU": " Intel® Core™ i7-13620H",
+      "RAM": "16 GB DDR5 5200MHz",
+      "SSD": " 512 GB M.2 NVMe™ PCIe®",
+      "GFX": "NVIDIA GeForce RTX 4050 6GB",
+      "LCD": " 15.6\" FHD IPS 144Hz",
+      "OS": "Windows 11 Home"
+    },
+    {
+      "id": "1",
+      "title": "MSI Raider GE76 12UHS 9S7-17K424-802",
+      "price": "3079",
+      "discountedPrice": "2079",
+      "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/799ae080-b345-4498-af6a-f9432366b6ab.webp",
+      "additionalImages": [
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/eddbda01-ac68-4725-8ef4-5baf35ff7d83.webp",
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/ac093a35-0cb8-4b9e-bcfb-0223c3aa4a3c.webp"
+      ],
+      "stock": true,
+      "CPU": " Intel® Core™ i9-12900HK",
+      "RAM": "64 GB DDR5 4800MHz",
+      "SSD": "2 TB M.2 NVMe™ PCIe®",
+      "GFX": "NVIDIA GeForce RTX 3080Ti 16GB ",
+      "LCD": "17.3\" UHD 4K IPS 120Hz",
+      "OS": "FreeDos"
+    },
+    {
+      "id": "1",
+      "title": "Acer Predator Helios 300 PH315-55-70ZV",
+      "price": "2659",
+      "discountedPrice": "2549",
+      "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/3e5409d7-7b8c-4db4-829b-05d0d1e0fc47.webp",
+      "additionalImages": [
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/f144b4fe-6633-4ff3-83b7-c3e5dde24531.webp",
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/7f441841-cbb8-460f-8a33-93be996ada3e.webp"
+      ],
+      "stock": true,
+      "CPU": " Intel® Core™ i7-12700H",
+      "RAM": "16 GB DDR5 4800MHz",
+      "SSD": " 512 GB M.2 NVMe™ PCIe® ",
+      "GFX": " NVIDIA GeForce RTX 3060 6GB",
+      "LCD": "15.6\" FHD IPS 165Hz",
+      "OS": "Windows 11 Home"
+    },
+    {
+      "id": "",
+      "title": "asaasa",
+      "price": "66",
+      "discountedPrice": "665",
+      "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAIgA4QMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABQEDBAYHAgj/xABJEAABAwICBgUHCQYCCwAAAAABAAIDBBEFEgYTITFBURRhcZHRIjJSVIGTwQcVFiNCU5KhsSRVcqLS8GOjMzRDRGRzgoOUsuH/xAAZAQADAQEBAAAAAAAAAAAAAAAAAQIDBAX/xAAiEQEBAAICAwACAwEAAAAAAAAAAQIRAyESMUEiYRMyUQT/2gAMAwEAAhEDEQA/AONoiLZIiIgCIiAIiIAiIgCIiAIiIDt3yJx5dEql/p1zz3MYPgsf5WLOr8GiN7WlPPi3wUn8jseTQiA8ZKiZ381vgon5UHZtIsKjP2YC7vcfBZ/WvxrApofumdy9ikp/uGdyutC9BMlgUlP9xH+FV6LT/cM/Cry9Fjw1ri1wa6+U22G3JBsfosH3Mf4U6LTfcM/Cry9ZH6sSZHZDsDrbCeV0Bjmlp/uGdy8mlh+6Z3LIVCEExTTQ/dM7l2XBIhFguHRhoaGUsTQBw8gbFyB67TSMyUdOz0Y2j8rKaeKN0kxZ+D0cc8MDZHOfkuT5Ld+/uWZQTmroIKh8ZidKxrzGeCyTtuN9+fFUvsJFrbd6z1fLbe5YXjkmPe/aiIitG4+VERFs5hERAEREARE42QBEuiAIh2cQl9l+CDEREB9A/JO0N0Bw0+k6c/5r/Ba38pDi7TOkZwZQtPtLpFtvybxarQXBm7rwl5/6nOPxWnafOz6b29CkYP1PxWX1p8RYVUCJk9xP1czJMjX5XA5Hi7TY32jktjx2uwx2GMgoY6UywHUm4fYB3lOdHc7BmuNt1rSoN/P2IsVKqFtGIYjhb8FEMENGatgDi3I8Rh0mx2r27xZu/wBi1b2hD+nUiwSqqiqqIS8uFzYLtYAaABuAC41Ttz1MLPSlaO8hdmKVOInHa6qo9QKSLOXk5nOaXW5DepBpc5rS4WcRdw5Hkrm+1uXLivKLZqKUREUm+VERFu5xERAEREAG02HOyy2YbOW3s1vabrzhwaaxmYX2E25qbFvYpt014+Py7a/PBJCQJGEX3cUhglmvq2E247gpupgZUANdcNzXNlca0MYGNsANwS8lfxdoluGT/adH3lWZaOeH/Zkjq2qdT7VrkDqS8lXhxa5xI5b1RTNbSRywuePJcBe/MKEcbAnkrl2xyw8X0toM3Jodgrf+Cid3tv8AFc90zfn06rx6EUbf5Gn4rpejMWp0dwuK1slHC3+QLl2kzs+m+Mu5Oa0exrR8FnF30shF5aV6TSqrtIYBURdMa59PmGsDNjrcbdasog0nVQYXT00uqr31sz7CLLE5gYL3Jdm38rDmo1UFkQFVREQTJwpufFaFnpVMXdmC7CSuR6PNz6QYeOHSG/kbrraVOMeokmbIwMGwq6V6NwHE2JtcLyVhhx5YZXLftrc9yST17UREWuqW3yoiIt3MIiIAiIgPcLzHMJRvbtAUk7FIywFsbsx+zdRSq2we2+4FTZtcyuPTYWXyM1m08V6QbUUOoUlo9h7MTxRkEwOqYC9+XfYf/bLxhGFyYpNIxsjYmRtzvkcN3V27FsGF4Zi2Ga12GChqmy5frXuIIA4W/vgptHa1pzg9DS6MTy0lM2N0b2bbkm2cC20lcvf5jv4V07SkYz8w1TsT6L0SzdY2G+bzxlA9tlz6vgjBhZC3I6UbnHmrw9MOXuvpygZqqKmjH2YmD+Wy49jTw/S3Gn3H+sOb+ZHwXZmDKAOAFh3LT5tAaaeurKx+Izh9TM6Qt1Ys25J2d6UFaICvYK3kaAUv7wm903xVRoBTfvCb3TfFNOmj96WPIreBoDTevze7HiqjQKmO7EJT/wBtvig2jWPIp7Ct5+gVN+8Jfdt8U+gNL+8JfdjxQbRl4JW+HQCn9fm903xVDoBTfvCb3bfFBaazokM+kuHjk8u7mkrqy1rCNDocMxGGsbWySujzWa5gA2gj4rZSEqcRVS7E/ndjYR+yAi5yixHG/wDfJSZVTf2dq8jbbrWWOHjb+2uWfnJ16ERFWkvlRERdDmEREAREQBERATlHPr6dp+0NjhyWRwuoCnnfTyh7doPnDmp2jd03KKeNzpHGwY0XN1nZp1YZbnbYdEZXMnqhIP2Uxt1x682z4/mt7Y1jBeMBrTwAsFGYBhDcNw7UyBrpJTmm2X4bB2DxUoNjdu5Y5e209IPTeoFPozWyFubzLNPG72rk9EX1WLUolOZ0lRG3vcBZdD+U+tbFgsFGHDNPMCRxyt2377LQtG26zSXCGHc6vgHfIFrx/wBXLy38n04TttxQEcwsLFqmqpqKSSgpuk1Jc1kcXW5wbc9W1Rk0+kMEropqvRmORnnMfVuBHaCkGw3QG+5QFPLpJVSaumqdG5pLXyx1T3G3OwTRfG6rFn1jKiKEdHeGtnp82rfvva/Yg2wLQNJdJ8Wosaq6alqQ2GMgNZqmm3kg8QVvt1yTSh+fSPETvGuI7hZOFemWdMMcH++D3LP6U+mGO+uD3LP6VDQU75bvvkjH2juSWlmjb6bPSYnpPaY+mGOeuN9wzwT6Y47s/bG7f8Fn9Ki2QMjAkqTb0WDeVW0NYDqwIZhwO4o0O0l9Msd9cHuWf0r2dKtIREJDUgMO46iPwURBBkJmqhlaw2yH7S9RVWumeyYjUybLW83lZGjm0j9L8ctfpjbf8hngui4PPLU4TQz1Ds8ksLXOda1yRdcfmYYXlhHm7utdhwdmTCKBnFtPH/6hKnjWWiIpU+VERFu5xERAEREAREQBbt8lLicRrxYW1LTe2434clpQBLg0C7ibADmt20YY7AJZZ43a2WWPI5rtjRtvsU5Y3KdKxvjl26Tccx2LSqz5QoKaepgOHyvmglfG06wZTYkXvvClafSeN3k1NM9o9Jjr/kVyrF2vbiVW+RpGeZ7x1guJCzx4/wDW2fLNfi9YvilTi9fJWVhGd1gGjc1vAD8/aVm6Ex63S/Bm8q2J/wCFwd8FCrY/k5aH6b4QOAlc7uY4rTWoxl3d19JQXpYXVRa9zicseSJ0m3mQwE22b1H6x9/JfX24eRXeCzcVxgYdUina7C2gMDrVNdqXduXVu2das0ekBqauOEPwby3gfVYmXu9g1Yueq6hftkMcaeiAdJK584B8qSQ2Z2P2jrCxzc7L37VcrZWisl8sXBIvfcrOdvpN70lSPS5Fir4jjmJvmzG1TKQ0cfKOwrredvpN71huw7C3OzuoaBziSSXQMues7N6JRY5FPO6ewPktG5g3Kkc8kLrxvd2cF135swr1Gh9wzwT5swr1Gh9wzwT2nxcgkkdIS55zO5leQQDxPWF2H5swr1Gh9wzwT5swr1Gh9wzwRs/ByGaZ81jK9ziBYXXgnZcbCV2H5swr1Gh9wzwT5swr1Gh9wzwRseLktRM2anZfZM3ySeYsuyUjclLA30WBvcFjHC8K9Rof/HZ4LKD4wC0Pbs3bUrTke0VM7fSb3qiRvlZERbucREQBERAONk3LLwzDqrFa1lJRMEkztu3YGji4ngFtgwSiwlxgb+0VTB9bUP3NdxDBwHXv/RGz+bRWE4PqctRVn6xpu1g4HmSplBa9uCK5NM7digdKG+VTvuAXNI/S3xU8rc8EVRFq542uad4cP0PNFEaQDc2G3sXSvkmwWzajGqhgu76imJ5DznD8h3rWGaI11ZMBhvlx32ukdlDAePX2Bdt0Zo8Mw+gp6TWgx0zAyOGzryHmbDidp6ysM8tXTfDG622fE4cQkqs1J0rV5RsjqmMF+wtKs0sGJtqY3zGs1Yd5WasY4W6wGL26rqjv6QL/AOCdn+Wq1eIvoo8j3iSpI2NNiGdewBIaQmJEuxCo3AB5/VY1rcl6e8yudJJte83ceZULpBX1VEyNlIwAyXzPAvltyUtEx7EOzgoTR6pr53SGscXxFvk5gAQfBYuMYriLa6SCnDoombPJZcv69yRtlItw7k2clgYfNVDDDLVNL52NJyjYXW3DtWoDGtIayq+pLmEu8wRgMaOu4Jt7VOWem/D/AM+XJvV1pv2y19lk2WvbesDFqyekw/XQxZ5XWBuNjbjeovBK3FJ61rpnl0BvnD2gdypjpsfsS221tqg9IMSraWeOGjDm5mZjIG3JPIdyvaPzVs0Mprczhf6sloB9v980JSVRNFTU76idwZFG3M52+wVugroMSpm1FM7PG4kB2Ujd2rWtO65xbBhNKC6Wdwc9o3nbZre/9AthwymhwnDqemztAjaM0jjYF3E+0qtdbDM9iKx02k9ag94EUm+dURF0OYROfUrlLTT1k7YaWJ0sjtwb48EB4Ow2O9U4X4c1t+HaEjVtfiVTb/Ch4drj4Kbh0YwaJt+gtf1yOcf1Knyh6ZuiGHR4Foz0uRg6RPHr5XEW2EXa3sGzZzJUI9znlznm7ibk9a2eVzpYTDKbsNvJ4GywX4bTSeaHR/w7UuPKS21WfckiFRZdTh8sBziz2cx4LEWsu/TK9Cu00D6moihiPlvOUE7h1q0pPR1oOKxX4BxTt1NjCby022mp2U0McMdwxg3czzKu7+B33uUv+l0uuG7t29Gak0lKDFujQ5OjwiRv+jmyDM3ttv2f2V5J1jsxcTtvmO8lRquwzFmw+byVTJFw+xmKjmNdbMwEciFC6QRY3O+B2BztjYGnONgJPDfwUR0PTL1sfjZ4K9bZtxa0NFg3Z1BHMa8hzmXcONlp3Q9MvWx+NngnQ9MvWx+Nngjx/Z7bkLtIsN27ZuXkRMDr6sX5gLUOhaZetj8bPBU6Hpj62Pxs8EvGFMr3q+25EBwykHKb3B4ry1jGbg0WWnGm0tY5okrRGDvdmabdwU7SsnihyVFVLUPPnPfYd1krqKktZZrKeVrnSMcwAkDWNG3rHUV6bV0raeSfO3VRgl5bawtvUM+IRzvcYmP5PndmPsaFh45O9uFTRP1hMwEbAGCPMTssL7TfiLKZd1pePUWNFYn4zj1TjNQ05GHyAeDtw/C387LcZdQ86uXVuPoussXA8O+bcLgpALvAzSkDe87z/fAK8+ipHve91PA53ElgJPbsWmVYvfQ6b1eH8A8EV5UUm+bkRF0OZdo6aWtqY6WC5llOVt9w5krp2DYVT4TS6qAXcdskm4vPwHVw/UizyqorieLUeGR5qyYsJ81jRdzuwcAozB9J24vjVNQwUbmMncQZXvF9gJ3AdXNERZqHO7ps+KQiho3VDTnLMvndZsoqLE4X+e10Z7wqIjjm4fN+N6ZzDnaC0ix3KMxKkAvPGP4x19SqiJbL0m9xGeF1m4LLqsTp3ONhmyk9tx8URb3uM8eq3WRrnRuEbsriLB3IpSx1Bo2vnaNZtDi3t2FVRcOu3o76ekREBchldHs3tPBZrXBwu03CoicRnFbqt1RE0SbWnTxt83arL6l7vNDWqqJbazGLGYna43PNVALjZoJ7AiJHvS/HTAm8g7BdWZsHopsQirpIr1EPmOvsFt2xURVGVtZc8EVSzV1LGyM5ObcKlNS09KHGngjizb8gsiKkryIiRv/Z",
+      "additionalImages": [
+        "",
+        ""
+      ],
+      "stock": false,
+      "CPU": "",
+      "RAM": "",
+      "SSD": "",
+      "GFX": "",
+      "LCD": "",
+      "OS": ""
+    },
+    {
+      "id": "2d50",
+      "title": "sadasfads",
+      "price": "55",
+      "discountedPrice": "551511",
+      "image": "data:image/jpeg;base64,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",
+      "additionalImages": [
+        "",
+        ""
+      ],
+      "stock": false,
+      "CPU": "",
+      "RAM": "",
+      "SSD": "",
+      "GFX": "",
+      "LCD": "",
+      "OS": ""
     }
   ]
 }

@@ -4,12 +4,12 @@ import api from "../../api/crud";
 
 const AdminPanel = () => {
   const [newProduct, setNewProduct] = useState({
-    id: "",
+    // id: "",
     title: "",
     price: "",
     discountedPrice: "",
     image: "",
-    additionalImages: ["", ""], // Ek resimler için dizi
+    additionalImages: ["", ""],
     stock: false,
     CPU: "",
     RAM: "",
@@ -17,14 +17,13 @@ const AdminPanel = () => {
     GFX: "",
     LCD: "",
     OS: "",
-    
   });
 
   const [products, setProducts] = useState([]);
-  const [id, setId] = useState(1);
+  // const [id, setId] = useState(1);
   const [pagination, setPagination] = useState({
     currentPage: 1,
-    productsPerPage: 3,
+    productsPerPage: 4, // 5 ürün göster
   });
 
   const getProducts = async () => {
@@ -43,7 +42,7 @@ const AdminPanel = () => {
       setNewProduct(product);
     } else {
       setNewProduct({
-        id: "",
+        // id: "",
         title: "",
         price: "",
         discountedPrice: "",
@@ -56,8 +55,6 @@ const AdminPanel = () => {
         GFX: "",
         LCD: "",
         OS: "",
-       
-      
       });
     }
     setIsModalOpen(true);
@@ -71,9 +68,9 @@ const AdminPanel = () => {
     e.preventDefault();
     const request = {
       ...newProduct,
-      id: String(id),
+      // id: String(id),
     };
-    setId(id + 1);
+    // setId(id + 1);
     await api.post("/products", request);
     setNewProduct({
       id: "",
@@ -89,10 +86,6 @@ const AdminPanel = () => {
       GFX: "",
       LCD: "",
       OS: "",
-      Weight: "",
-      Color: "",
-      P_N: "",
-      Warranty: "",
     });
     getProducts();
     closeModal();
@@ -102,7 +95,9 @@ const AdminPanel = () => {
     e.preventDefault();
     const request = {
       ...newProduct,
-      additionalImages: newProduct.additionalImages.filter((image) => image !== ""),
+      additionalImages: newProduct.additionalImages.filter(
+        (image) => image !== ""
+      ),
     };
     await api.put(`/products/${newProduct.id}`, request);
     getProducts();
@@ -115,10 +110,22 @@ const AdminPanel = () => {
     closeModal();
   };
 
-  // Pagination Functions
-  const indexOfLastProduct = pagination.currentPage * pagination.productsPerPage;
+  // Stok durumunu değiştirme işlevi
+  const toggleStock = () => {
+    setNewProduct({ ...newProduct, stock: !newProduct.stock });
+  };
+
+  // Stok durumu metni
+  const stockStatusText = newProduct.stock ? "Stokta Var" : "Stokta Yok";
+
+  // Sayfalama Fonksiyonları
+  const indexOfLastProduct =
+    pagination.currentPage * pagination.productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - pagination.productsPerPage;
-  const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
+  const currentProducts = products.slice(
+    indexOfFirstProduct,
+    indexOfLastProduct
+  );
 
   const paginate = (pageNumber) => {
     setPagination({ ...pagination, currentPage: pageNumber });
@@ -130,11 +137,12 @@ const AdminPanel = () => {
 
   return (
     <div className="admin-panel">
-      <h1>Admin Panel</h1>
-
-      <button onClick={() => openModal()} className="add-button">
-        Məhsul Əlavə Et
-      </button>
+      <div className="flex justify-between">
+        <h2 className=" h2 font-bold"> Salam Dəyərli Admin ❤️</h2>
+        <button onClick={() => openModal()} className="add-button">
+          Məhsul Əlavə Et
+        </button>
+      </div>
 
       {isModalOpen && (
         <div className="modal ">
@@ -142,7 +150,9 @@ const AdminPanel = () => {
             <span className="close" onClick={closeModal}>
               &times;
             </span>
-            <h2 className="font-bold text-purple-700">{newProduct.id ? " Düzəlt" : "Əlavə Et"}</h2>
+            <h2 className="font-bold text-purple-700">
+              {newProduct.id ? "Düzəliş Et" : "Əlavə Et"}
+            </h2>
             <form onSubmit={newProduct.id ? handleUpdate : handleAdd}>
               <div className="main-cover">
                 <div className="input-container">
@@ -154,74 +164,88 @@ const AdminPanel = () => {
                     id="title"
                     className="input-field"
                     value={newProduct.title}
-                    onChange={(e) => setNewProduct({ ...newProduct, title: e.target.value })}
+                    onChange={(e) =>
+                      setNewProduct({ ...newProduct, title: e.target.value })
+                    }
                     required
                   />
                 </div>
 
                 <div className="input-container">
                   <label className="label" htmlFor="price">
-                    Fiyat:
+                    Endirimsiz Qiyməti:
                   </label>
                   <input
                     type="number"
                     id="price"
                     className="input-field"
                     value={newProduct.price}
-                    onChange={(e) => setNewProduct({ ...newProduct, price: e.target.value })}
+                    onChange={(e) =>
+                      setNewProduct({ ...newProduct, price: e.target.value })
+                    }
                     required
                   />
                 </div>
 
                 <div className="input-container">
                   <label className="label" htmlFor="discountedPrice">
-                    İndirimli Fiyat:
+                    Yekun Qiyməti:
                   </label>
                   <input
                     type="number"
                     id="discountedPrice"
                     className="input-field"
                     value={newProduct.discountedPrice}
-                    onChange={(e) => setNewProduct({ ...newProduct, discountedPrice: e.target.value })}
+                    onChange={(e) =>
+                      setNewProduct({
+                        ...newProduct,
+                        discountedPrice: e.target.value,
+                      })
+                    }
                   />
                 </div>
 
                 <div className="input-container">
                   <label className="label" htmlFor="image">
-                    Ana Resim Linki:
+                    Əsas Rəsim Linki :
                   </label>
                   <input
                     type="text"
                     id="image"
                     className="input-field"
                     value={newProduct.image}
-                    onChange={(e) => setNewProduct({ ...newProduct, image: e.target.value })}
+                    onChange={(e) =>
+                      setNewProduct({ ...newProduct, image: e.target.value })
+                    }
                     required
                   />
                 </div>
 
-                {/* Ek resimler için input alanları */}
-                {newProduct.additionalImages.map((image, index) => (
-                  <div className="input-container" key={index}>
-                    <label className="label" htmlFor={`additionalImage${index + 1}`}>
-                      Ek Resim Linki {index + 1}:
-                    </label>
-                    <input
-                      type="text"
-                      id={`additionalImage${index + 1}`}
-                      className="input-field"
-                      value={image}
-                      onChange={(e) =>
-                        setNewProduct({
-                          ...newProduct,
-                          additionalImages: newProduct.additionalImages.map((item, i) =>
-                            i === index ? e.target.value : item
-                          ),
-                        })
-                      }
-                    />
-                  </div>
-                ))}
+                {newProduct.additionalImages &&
+                  newProduct.additionalImages.map((image, index) => (
+                    <div className="input-container" key={index}>
+                      <label
+                        className="label"
+                        htmlFor={`additionalImage${index + 1}`}
+                      >
+                        Əlavə Rəsim Linki {index + 1}:
+                      </label>
+                      <input
+                        type="text"
+                        id={`additionalImage${index + 1}`}
+                        className="input-field"
+                        value={image}
+                        onChange={(e) =>
+                          setNewProduct({
+                            ...newProduct,
+                            additionalImages: newProduct.additionalImages.map(
+                              (item, i) => (i === index ? e.target.value : item)
+                            ),
+                          })
+                        }
+                      />
+                    </div>
+                  ))}
 
                 <div className="input-container">
                   <label className="label" htmlFor="CPU">
@@ -232,7 +256,9 @@ const AdminPanel = () => {
                     id="CPU"
                     className="input-field"
                     value={newProduct.CPU}
-                    onChange={(e) => setNewProduct({ ...newProduct, CPU: e.target.value })}
+                    onChange={(e) =>
+                      setNewProduct({ ...newProduct, CPU: e.target.value })
+                    }
                   />
                 </div>
 
@@ -245,9 +271,12 @@ const AdminPanel = () => {
                     id="RAM"
                     className="input-field"
                     value={newProduct.RAM}
-                    onChange={(e) => setNewProduct({ ...newProduct, RAM: e.target.value })}
+                    onChange={(e) =>
+                      setNewProduct({ ...newProduct, RAM: e.target.value })
+                    }
                   />
                 </div>
+
                 <div className="input-container">
                   <label className="label" htmlFor="SSD">
                     SSD:
@@ -257,9 +286,12 @@ const AdminPanel = () => {
                     id="SSD"
                     className="input-field"
                     value={newProduct.SSD}
-                    onChange={(e) => setNewProduct({ ...newProduct, SSD: e.target.value })}
+                    onChange={(e) =>
+                      setNewProduct({ ...newProduct, SSD: e.target.value })
+                    }
                   />
                 </div>
+
                 <div className="input-container">
                   <label className="label" htmlFor="GFX">
                     GFX:
@@ -269,9 +301,12 @@ const AdminPanel = () => {
                     id="GFX"
                     className="input-field"
                     value={newProduct.GFX}
-                    onChange={(e) => setNewProduct({ ...newProduct, GFX: e.target.value })}
+                    onChange={(e) =>
+                      setNewProduct({ ...newProduct, GFX: e.target.value })
+                    }
                   />
                 </div>
+
                 <div className="input-container">
                   <label className="label" htmlFor="LCD">
                     LCD:
@@ -281,26 +316,53 @@ const AdminPanel = () => {
                     id="LCD"
                     className="input-field"
                     value={newProduct.LCD}
-                    onChange={(e) => setNewProduct({ ...newProduct, LCD: e.target.value })}
+                    onChange={(e) =>
+                      setNewProduct({ ...newProduct, LCD: e.target.value })
+                    }
                   />
                 </div>
+
                 <div className="input-container">
                   <label className="label" htmlFor="OS">
-                    OS:
+                    Əməliyyat Sistemi:
                   </label>
                   <input
                     type="text"
                     id="OS"
                     className="input-field"
                     value={newProduct.OS}
-                    onChange={(e) => setNewProduct({ ...newProduct, OS: e.target.value })}
+                    onChange={(e) =>
+                      setNewProduct({ ...newProduct, OS: e.target.value })
+                    }
                   />
                 </div>
 
-                {/* Diğer alanlar da aynı şekilde eklenebilir */}
+                <div className="input-container w-40 rounded items-center bg-purple-100 ">
+                  <div className="stock flex justify-start ">
+                    {" "}
+                    <label className="label mr-3" htmlFor="stock">
+                      Stok Statusu:
+                    </label>
+                    <input
+                      type="checkbox"
+                      id="stock"
+                      className="stock-checkbox cursor-pointer "
+                      checked={newProduct.stock}
+                      onChange={toggleStock}
+                    />
+                  </div>
+
+                  <span className="stock-text text-purple-600 font-bold">
+                    {newProduct.stock ? "Var" : "Yoxdur"}
+                  </span>
+                </div>
               </div>
               <div className="button-container">
-                <button type="button" onClick={closeModal} className="cancel-button">
+                <button
+                  type="button"
+                  onClick={closeModal}
+                  className="cancel-button"
+                >
                   Ləğv Et
                 </button>
                 <button type="submit" className="add-update-button">
@@ -316,46 +378,76 @@ const AdminPanel = () => {
         <thead>
           <tr>
             <th>ID</th>
-            <th>Məhsulun Adı</th>
-            <th>Fiyat</th>
-            <th>İndirimli Fiyat</th>
+            <th>Məhsul Adı</th>
+            <th>Endirimsiz Qiyməti</th>
+            <th>Yekun Qiymət</th>
             <th>Stok Statusu</th>
+            <th>Şəkli</th>
             <th>Əməliyyatlar</th>
           </tr>
         </thead>
         <tbody>
-          {currentProducts.map((product, index) => (
-            <tr key={product.id}>
-              <td>{count(index)}</td>
-              <td>{product.title}</td>
-              <td>{product.price}</td>
-              <td>{product.discountedPrice}</td>
-              <td className="text-center font-bold text-2xl">
-                <span style={{ color: product.stock ? "green" : "red" }}>{product.stock ? "✔" : "✘"}</span>
-              </td>
-              <td>
-                <button onClick={() => openModal(product)} className="edit-button">
-                  Düzenle
-                </button>
-                <button onClick={() => handleDelete(product.id)} className="delete-button">
-                  Sil
-                </button>
+          {currentProducts.length > 0 ? (
+            currentProducts.map((product, index) => (
+              <tr key={product.id}>
+                <td>{count(index)}</td>
+                <td>{product.title}</td>
+                <td>{product.price}</td>
+                <td>{product.discountedPrice}</td>
+                <td className="text-center font-bold text-2xl">
+  <span style={{ color: product.stock ? "green" : "red" }}>
+    {product.stock ? <i className="fas fa-check-circle"></i> : <i className="fas fa-times-circle"></i>}
+  </span>
+</td>
+
+
+
+                <td>
+                  <img
+                    src={product.image}
+                    alt={product.title}
+                    className="product-image"
+                  />
+                </td>
+                <td>
+                  <button
+                    onClick={() => openModal(product)}
+                    className="edit-button"
+                  >
+                    Düzəlt
+                  </button>
+                  <button
+                    onClick={() => handleDelete(product.id)}
+                    className="delete-button"
+                  >
+                    Sil
+                  </button>
+                </td>
+              </tr>
+            ))
+          ) : (
+            <tr>
+              <td colSpan="7" className="text-center">
+                Henüz ürün bulunmamaktadır.
               </td>
             </tr>
-          ))}
+          )}
         </tbody>
       </table>
 
       <div className="pagination">
-        {Array.from({ length: Math.ceil(products.length / pagination.productsPerPage) }, (_, index) => (
-          <button
-            key={index}
-            onClick={() => paginate(index + 1)}
-            className={pagination.currentPage === index + 1 ? "active" : ""}
-          >
-            {index + 1}
-          </button>
-        ))}
+        {Array.from(
+          { length: Math.ceil(products.length / pagination.productsPerPage) },
+          (_, index) => (
+            <button
+              key={index}
+              onClick={() => paginate(index + 1)}
+              className={pagination.currentPage === index + 1 ? "active" : ""}
+            >
+              {index + 1}
+            </button>
+          )
+        )}
       </div>
     </div>
   );

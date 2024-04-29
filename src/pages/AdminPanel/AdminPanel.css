@@ -2,18 +2,23 @@
 /* Admin paneli stilleri */
 .admin-panel {
   padding: 20px;
-  max-width: 800px;
-  margin: 60px auto;
-  background-color: #f2f2f2;
+  max-width: 100%;
+  height: auto;
+  margin:  auto;
+background: rgb(17,24,39);
+
 }
 
 /* Sayfalama stilleri */
 .pagination {
   margin-top: 20px;
 }
-
+h2{
+  color: #ffffff;
+  font-size:18px!important;
+}
 .pagination button {
-  background-color: #fff;
+  background-color: #d3d3d3;
   border: 1px solid #ddd;
   color: #555;
   padding: 5px 15px;
@@ -27,13 +32,15 @@
 }
 
 .pagination button.active {
-  background-color: #007bff;
+  background-color: #1d336a;
   color: #fff;
 }
 
+
 /* Tablo stilleri */
 table {
-  background-color: #f2f2f2;
+  background-color:rgba(58, 73, 94, 0.822);
+  border-radius: 10px !important;
 }
 
 .admin-panel h1 {
@@ -45,11 +52,19 @@ table {
 .add-button {
   margin-bottom: 10px;
   padding: 8px 16px;
-  background-color: #007bff;
+  background-color: #00418b;
   color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: 0.5s all;
+
+  
+}
+.add-button:hover{
+  background-color: #025fc9;
+  transition: 0.5s all;
+  
 }
 
 /* Modal stilleri */
@@ -66,13 +81,17 @@ table {
 }
 
 .modal-content {
-  background-color: #fff;
+  /* /* background-color: #1b4563; */
+/* background: rgb(26, 39, 67); */
+background-color: #f8f5f5;
+   
   margin: auto;
   padding: 20px;
   border-radius: 8px;
-  width: 80%;
-  max-width: 700px;
+  width: 100%;
+  max-width: 1000px;
   position: relative;
+  /* color:white; */
 }
 
 .close {
@@ -95,20 +114,38 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
+  
 }
 
 .product-table th,
 .product-table td {
-  border: 1px solid #ddd;
+  /* border: 0.1px solid #d2dbdb; */
+  
+  
   padding: 8px;
 }
 
 .product-table th {
-  background-color: #f2f2f2;
-  text-align: left;
+  background-color:#012347;
+  text-align: center;
+  color:white;
+ 
+
+}
+tr:nth-child(even) {
+ 
+  background-color:rgb(30, 43, 61);
+
+}
+.product-table tr{
+  text-align: center;
+  
+  font-weight:500;
+  color:rgb(212, 210, 210);
 }
 
 .product-image {
+  margin: auto;
   max-width: 100px;
   height: auto;
 }
@@ -161,12 +198,12 @@ table {
 }
 
 .edit-button {
-  background-color: #007bff;
+  background-color: #02264d;
   color: #fff;
 }
 
 .edit-button:hover {
-  background-color: #0056b3;
+  background-color: #020415;
 }
 
 .delete-button {
@@ -183,15 +220,24 @@ table {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
+  flex-wrap: wrap;
 }
 
 .label {
   font-weight: bold;
   margin-bottom: 5px;
 }
-
+.main-cover{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.flex0{
+  width:50%;
+  /* background-color: #007bff; */
+}
 .input-field {
-  width: calc(100% - 20px);
+  width: 400px;
   padding: 10px;
   color: #000;
   border-radius: 4px;
@@ -203,4 +249,41 @@ table {
 .checkbox-input {
   margin-right: 5px;
   vertical-align: middle;
+  background-color: #0056b3;
+}
+/* Küçük cihazlar için */
+@media screen and (max-width: 600px) {
+  .product-table th,
+  .product-table td {
+    font-size: 12px;
+  }
+
+  .input-field {
+    width: 100%;
+  }
+}
+
+/* Orta büyüklükteki cihazlar için */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+ 
+  .product-table th,
+  .product-table td {
+    font-size: 14px;
+  }
+
+  .input-field {
+    width: 300px;
+  }
+}
+
+/* Büyük cihazlar için */
+@media screen and (min-width: 1025px) {
+  .product-table th,
+  .product-table td {
+    font-size: 16px;
+  }
+
+  .input-field {
+    width: 400px;
+  }
 }
