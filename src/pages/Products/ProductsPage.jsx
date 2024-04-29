@@ -6,7 +6,7 @@ import Footer from "../../components/footer";
 import Card from "../../components/Card";
 import Productsearch from "../../components/productsearch";
 import PriceFilter from "../../components/pricefilter";
-import Filter from "../../components/filter";
+import ModalFilter from "../../components/ModalFilter.jsx";
 import api from "../../api/crud";
 
 export default function ProductsPage() {
@@ -55,7 +55,7 @@ export default function ProductsPage() {
           Popüler Ürünler
         </h1>
         <div className="flex flex-wrap justify-center">
-          <Filter />
+          <ModalFilter/>
           <Productsearch onSearch={handleSearch} />
           <PriceFilter />
         </div>

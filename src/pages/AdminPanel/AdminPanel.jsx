@@ -4,7 +4,6 @@ import api from "../../api/crud";
 
 const AdminPanel = () => {
   const [newProduct, setNewProduct] = useState({
-    // id: "",
     title: "",
     price: "",
     discountedPrice: "",
@@ -17,32 +16,82 @@ const AdminPanel = () => {
     GFX: "",
     LCD: "",
     OS: "",
+    model: "",
+    processor: "",
+    type: "",
+    videocard: "",
   });
 
   const [products, setProducts] = useState([]);
-  // const [id, setId] = useState(1);
   const [pagination, setPagination] = useState({
     currentPage: 1,
-    productsPerPage: 4, // 5 ürün göster
+    productsPerPage: 4,
   });
 
-  const getProducts = async () => {
-    const response = await api.get("/products");
-    setProducts(response.data);
-  };
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [models, setModels] = useState([]);
+  const [processors, setProcessors] = useState([]);
+  const [types, setTypes] = useState([]);
+  const [videoCards, setVideoCards] = useState([]);
 
   useEffect(() => {
     getProducts();
+    fetchModels();
+    fetchProcessors();
+    fetchTypes();
+    fetchVideoCards();
   }, []);
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const getProducts = async () => {
+    try {
+      const response = await api.get("/products");
+      setProducts(response.data);
+    } catch (error) {
+      console.error("Error fetching products:", error);
+    }
+  };
+
+  const fetchModels = async () => {
+    try {
+      const response = await api.get("/models");
+      setModels(response.data);
+    } catch (error) {
+      console.error("Error fetching models:", error);
+    }
+  };
+
+  const fetchProcessors = async () => {
+    try {
+      const response = await api.get("/processors");
+      setProcessors(response.data);
+    } catch (error) {
+      console.error("Error fetching processors:", error);
+    }
+  };
+
+  const fetchTypes = async () => {
+    try {
+      const response = await api.get("/types");
+      setTypes(response.data);
+    } catch (error) {
+      console.error("Error fetching types:", error);
+    }
+  };
+
+  const fetchVideoCards = async () => {
+    try {
+      const response = await api.get("/videocards");
+      setVideoCards(response.data);
+    } catch (error) {
+      console.error("Error fetching video cards:", error);
+    }
+  };
 
   const openModal = (product = null) => {
     if (product) {
       setNewProduct(product);
     } else {
       setNewProduct({
-        // id: "",
         title: "",
         price: "",
         discountedPrice: "",
@@ -55,6 +104,10 @@ const AdminPanel = () => {
         GFX: "",
         LCD: "",
         OS: "",
+        model: "",
+        processor: "",
+        type: "",
+        videocard: "",
       });
     }
     setIsModalOpen(true);
@@ -66,14 +119,9 @@ const AdminPanel = () => {
 
   const handleAdd = async (e) => {
     e.preventDefault();
-    const request = {
-      ...newProduct,
-      // id: String(id),
-    };
-    // setId(id + 1);
+    const request = { ...newProduct };
     await api.post("/products", request);
     setNewProduct({
-      id: "",
       title: "",
       price: "",
       discountedPrice: "",
@@ -86,6 +134,10 @@ const AdminPanel = () => {
       GFX: "",
       LCD: "",
       OS: "",
+      model: "",
+      processor: "",
+      type: "",
+      videocard: "",
     });
     getProducts();
     closeModal();
@@ -110,15 +162,12 @@ const AdminPanel = () => {
     closeModal();
   };
 
-  // Stok durumunu değiştirme işlevi
   const toggleStock = () => {
     setNewProduct({ ...newProduct, stock: !newProduct.stock });
   };
 
-  // Stok durumu metni
   const stockStatusText = newProduct.stock ? "Stokta Var" : "Stokta Yok";
 
-  // Sayfalama Fonksiyonları
   const indexOfLastProduct =
     pagination.currentPage * pagination.productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - pagination.productsPerPage;
@@ -138,7 +187,7 @@ const AdminPanel = () => {
   return (
     <div className="admin-panel">
       <div className="flex justify-between">
-        <h2 className=" h2 font-bold"> Salam Dəyərli Admin ❤️</h2>
+        <h2 className="h2 font-bold">Salam Dəyərli Admin ❤️</h2>
         <button onClick={() => openModal()} className="add-button">
           Məhsul Əlavə Et
         </button>
@@ -189,7 +238,7 @@ const AdminPanel = () => {
 
                 <div className="input-container">
                   <label className="label" htmlFor="discountedPrice">
-                    Yekun Qiyməti:
+                    Yekun Qiymət:
                   </label>
                   <input
                     type="number"
@@ -337,21 +386,128 @@ const AdminPanel = () => {
                   />
                 </div>
 
-                <div className="input-container w-40 rounded items-center bg-purple-100 ">
-                  <div className="stock flex justify-start ">
-                    {" "}
+                <div className="input-container">
+                  <label className="label" htmlFor="model">
+                    Model:
+                  </label>
+                  <select
+                    id="model"
+                    className="input-field"
+                    value={newProduct.model}
+                    onChange={(e) =>
+                      setNewProduct({ ...newProduct, model: e.target.value })
+                    }
+                  >
+                    <option value="">Model seçin</option>
+                    <option value="Asus">Asus</option>
+                    <option value="MSI">MSI</option>
+                    <option value="HP">HP</option>
+                    <option value="Lenovo">Lenovo</option>
+                    <option value="Digər">Digər</option>
+
+                    {models.map((model) => (
+                      <option key={model.id} value={model.name}>
+                        {model.name}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                <div className="input-container">
+                  <label className="label" htmlFor="processor">
+                    Prosessor:
+                  </label>
+                  <select
+                    id="processor"
+                    className="input-field"
+                    value={newProduct.processor}
+                    onChange={(e) =>
+                      setNewProduct({
+                        ...newProduct,
+                        processor: e.target.value,
+                      })
+                    }
+                  >
+                    <option value="">Prosessor seçin</option>
+                    <option value="Intel">Intel</option>
+                    <option value="AMD">AMD</option>
+                    <option value="Digər">Digər</option>
+
+                    {processors.map((processor) => (
+                      <option key={processor.id} value={processor.name}>
+                        {processor.name}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                <div className="input-container">
+                  <label className="label" htmlFor="type">
+                    Tip:
+                  </label>
+                  <select
+                    id="type"
+                    className="input-field"
+                    value={newProduct.type}
+                    onChange={(e) =>
+                      setNewProduct({ ...newProduct, type: e.target.value })
+                    }
+                  >
+                    <option value="">Tip seçin</option>
+                    <option value="Business">Business</option>
+                    <option value="Dizayn">Dizayn</option>
+                    <option value="Gaming">Gaming</option>
+                    <option value="Digər">Digər</option>
+
+                    {types.map((type) => (
+                      <option key={type.id} value={type.name}>
+                        {type.name}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                <div className="input-container">
+                  <label className="label" htmlFor="videocard">
+                    Video Kartı:
+                  </label>
+                  <select
+                    id="videocard"
+                    className="input-field"
+                    value={newProduct.videocard}
+                    onChange={(e) =>
+                      setNewProduct({ ...newProduct, videocard: e.target.value })
+                    }
+                  >
+                    <option value="">Video Kartı seçin</option>
+                    <option value="4050">RTX 4050</option>
+                    <option value="4060">RTX 4060</option>
+                    <option value="4070">RTX 4070</option>
+                    <option value="4080">RTX 4080</option>
+                    <option value="4090">RTX 4090</option>
+                    <option value="Digər">Digər</option>
+
+                    {videoCards.map((videoCard) => (
+                      <option key={videoCard.id} value={videoCard.name}>
+                        {videoCard.name}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                <div className="input-container w-40 rounded items-center bg-purple-100">
+                  <div className="stock flex justify-start">
                     <label className="label mr-3" htmlFor="stock">
                       Stok Statusu:
                     </label>
                     <input
                       type="checkbox"
                       id="stock"
-                      className="stock-checkbox cursor-pointer "
+                      className="stock-checkbox cursor-pointer"
                       checked={newProduct.stock}
                       onChange={toggleStock}
                     />
                   </div>
-
                   <span className="stock-text text-purple-600 font-bold">
                     {newProduct.stock ? "Var" : "Yoxdur"}
                   </span>
@@ -395,13 +551,14 @@ const AdminPanel = () => {
                 <td>{product.price}</td>
                 <td>{product.discountedPrice}</td>
                 <td className="text-center font-bold text-2xl">
-  <span style={{ color: product.stock ? "green" : "red" }}>
-    {product.stock ? <i className="fas fa-check-circle"></i> : <i className="fas fa-times-circle"></i>}
-  </span>
-</td>
-
-
-
+                  <span style={{ color: product.stock ? "green" : "red" }}>
+                    {product.stock ? (
+                      <i className="fas fa-check-circle"></i>
+                    ) : (
+                      <i className="fas fa-times-circle"></i>
+                    )}
+                  </span>
+                </td>
                 <td>
                   <img
                     src={product.image}

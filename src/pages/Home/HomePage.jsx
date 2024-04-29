@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom"
 
 import Card from "../../components/Card";
-import Sectionone from "../../components/sectionone";
+// import Sectionone from "../../components/sectionone";
 import Footer from "../../components/footer";
 import Review from "../../components/Review";
 import Header from "../../components/Header";
