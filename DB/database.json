@@ -18,9 +18,119 @@
       "LCD": "16.0\" WQXGA LED 165Hz",
       "OS": "Windows 11 Home",
       "model": "MSI",
-      "processor": "AMD",
+      "processor": "AMD Ryzen",
       "type": "Gaming",
       "videocard": "4070"
+    },
+    {
+      "id": "92c5",
+      "title": "Asus ZenBook 14X OLED UX5401EA-L7111",
+      "price": "2099",
+      "discountedPrice": "1899",
+      "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/a1b244ae-1213-4dfb-b77e-387a89283087.webp",
+      "additionalImages": [
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/47d888e7-fe47-480e-a84f-d60712b7e3d2.webp",
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/ff7ccd57-68f5-4df7-854a-b179b621e049.webp"
+      ],
+      "stock": false,
+      "CPU": " Intel® Core™ i5-1135G7",
+      "RAM": " 16 GB LPDDR4X 4266MHz",
+      "SSD": "512 GB M.2 NVMe™ PCIe® 4.0",
+      "GFX": " Intel® Iris Xe Graphics",
+      "LCD": "14.0\" WQXGA OLED 90Hz",
+      "OS": "FreeDos",
+      "model": "Asus",
+      "processor": "Intel",
+      "type": "Business",
+      "videocard": "Digər"
+    },
+    {
+      "id": "99dc",
+      "title": "Acer Aspire 5 A515-58M-39AP NX.KHEER.001",
+      "price": "1280",
+      "discountedPrice": "999",
+      "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/Acer-Aspire-5-A515-58M-532W_1tidvH.webp",
+      "additionalImages": [
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/Acer-Aspire-5-A515-58M-532W_2XJof5.webp",
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/Acer-Aspire-5-A515-58M-532W_5jM1PA.webp"
+      ],
+      "stock": true,
+      "CPU": "Intel® Core™ i3-1315U",
+      "RAM": " 8 GB LPDDR5 4800MHz",
+      "SSD": "512 GB M.2 NVMe™ PCIe®",
+      "GFX": "Intel® Iris® Xᵉ Graphics",
+      "LCD": "15.6\" FHD (1920 x 1080) IPS",
+      "OS": "FreeDos",
+      "model": "Acer",
+      "processor": "Intel",
+      "type": "Business",
+      "videocard": "Digər"
+    },
+    {
+      "id": "0b23",
+      "title": "HP OMEN 16-xf0033dx 7N9X4UA",
+      "price": "3139",
+      "discountedPrice": "2949",
+      "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/f284098e-b376-402d-945a-a96054066724.webp",
+      "additionalImages": [
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/a04e5aff-9d37-4458-beb1-cb809ea27c57.webp",
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/bd1a0ab9-4fb3-4b41-b1b3-2fdb3ff52dd6.webp"
+      ],
+      "stock": false,
+      "CPU": " AMD® Ryzen™ 9 7940HS",
+      "RAM": " 16 GB DDR5 5200MHz",
+      "SSD": "512 GB M.2 NVMe™ PCIe®",
+      "GFX": "NVIDIA GeForce RTX 4070 8GB",
+      "LCD": "16.0\" FHD IPS 165Hz",
+      "OS": "Windows 11 Home",
+      "model": "HP",
+      "processor": "AMD Ryzen",
+      "type": "Gaming",
+      "videocard": "RTX 4070"
+    },
+    {
+      "id": "6638",
+      "title": "Lenovo Legion 5 15IAH7 82RC0031RK",
+      "price": "2149",
+      "discountedPrice": "1999",
+      "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/8a5ae89e-d900-4b69-839d-81db891ccd0e.webp",
+      "additionalImages": [
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/8d963bb4-432a-4238-a228-2c000e5d5da5.webp",
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/2584182d-cd0c-4f42-8cf8-cd3b1f99017b.webp"
+      ],
+      "stock": true,
+      "CPU": "Intel® Core™ i5-12500H",
+      "RAM": "16 GB DDR5 4800MHz",
+      "SSD": "512 GB M.2 NVMe™ PCIe®",
+      "GFX": "NVIDIA GeForce RTX 3050Ti 4GB",
+      "LCD": " 15.6\" FHD (1920x1080) IPS",
+      "OS": "Windows 11 Home",
+      "model": "Lenovo",
+      "processor": "Intel",
+      "type": "Gaming",
+      "videocard": "Digər"
+    },
+    {
+      "id": "5d67",
+      "title": "Dell Latitude 3520",
+      "price": "1679",
+      "discountedPrice": "1349",
+      "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/744387c3-4a79-4517-906a-4c076ba54b9e.webp",
+      "additionalImages": [
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/01fabea2-7319-4ee7-b9e9-e75902bc4e42.webp",
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/5089060c-0be7-4dbe-a5c7-ed0a990a479a.webp"
+      ],
+      "stock": true,
+      "CPU": " Intel® Core™ i5-1135G7",
+      "RAM": "8 GB DDR4 3200MHz",
+      "SSD": "256 GB M.2 NVMe™ PCIe®",
+      "GFX": "NVIDIA GeForce RTX 3050Ti 4GB",
+      "LCD": "15.6\" FHD (1920 x 1080)",
+      "OS": "Windows 11 Home",
+      "model": "Dell",
+      "processor": "Intel",
+      "type": "Business",
+      "videocard": "Digər"
     }
   ]
 }

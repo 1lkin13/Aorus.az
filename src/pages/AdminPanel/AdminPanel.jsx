@@ -53,7 +53,7 @@ const AdminPanel = () => {
 
   const fetchModels = async () => {
     try {
-      const response = await api.get("/models");
+      const response = await api.get(`/products/${models}`);
       setModels(response.data);
     } catch (error) {
       console.error("Error fetching models:", error);
@@ -62,7 +62,7 @@ const AdminPanel = () => {
 
   const fetchProcessors = async () => {
     try {
-      const response = await api.get("/processors");
+      const response = await api.get(`/products/${processors}`);
       setProcessors(response.data);
     } catch (error) {
       console.error("Error fetching processors:", error);
@@ -71,7 +71,7 @@ const AdminPanel = () => {
 
   const fetchTypes = async () => {
     try {
-      const response = await api.get("/types");
+      const response = await api.get(`/products/${types}`);
       setTypes(response.data);
     } catch (error) {
       console.error("Error fetching types:", error);
@@ -80,7 +80,7 @@ const AdminPanel = () => {
 
   const fetchVideoCards = async () => {
     try {
-      const response = await api.get("/videocards");
+      const response = await api.get(`/products/${videoCards}`);
       setVideoCards(response.data);
     } catch (error) {
       console.error("Error fetching video cards:", error);
@@ -400,7 +400,9 @@ const AdminPanel = () => {
                   >
                     <option value="">Model seçin</option>
                     <option value="Asus">Asus</option>
+                    <option value="Acer">Acer</option>
                     <option value="MSI">MSI</option>
+                    <option value="Dell">Dell</option>
                     <option value="HP">HP</option>
                     <option value="Lenovo">Lenovo</option>
                     <option value="Digər">Digər</option>
@@ -430,7 +432,7 @@ const AdminPanel = () => {
                   >
                     <option value="">Prosessor seçin</option>
                     <option value="Intel">Intel</option>
-                    <option value="AMD">AMD</option>
+                    <option value="AMD Ryzen">AMD Ryzen</option>
                     <option value="Digər">Digər</option>
 
                     {processors.map((processor) => (
@@ -480,11 +482,11 @@ const AdminPanel = () => {
                     }
                   >
                     <option value="">Video Kartı seçin</option>
-                    <option value="4050">RTX 4050</option>
-                    <option value="4060">RTX 4060</option>
-                    <option value="4070">RTX 4070</option>
-                    <option value="4080">RTX 4080</option>
-                    <option value="4090">RTX 4090</option>
+                    <option value="RTX 4050">RTX 4050</option>
+                    <option value="RTX 4060">RTX 4060</option>
+                    <option value="RTX 4070">RTX 4070</option>
+                    <option value="RTX 4080">RTX 4080</option>
+                    <option value="RTX 4090">RTX 4090</option>
                     <option value="Digər">Digər</option>
 
                     {videoCards.map((videoCard) => (

@@ -13,7 +13,7 @@ const Productsearch = ({ onSearch }) => {
   };
 
   return (
-    <div className="mx-auto mt-5 w-screen max-w-screen-md py-20 leading-6">
+    <div className="  w-screen max-w-screen-md py-20 leading-6">
       <form
         onSubmit={handleSubmit}
         className="relative mx-auto flex w-full max-w-2xl items-center justify-between rounded-md border shadow-lg"

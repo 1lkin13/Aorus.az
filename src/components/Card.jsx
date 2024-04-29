@@ -6,7 +6,7 @@ const Card = ({ product }) => {
 
   return ( 
     <>
-      <article className="cursor-pointer relative w-72 mt-10 flex flex-col overflow-hidden rounded-lg border hover:shadow-purple-900 hover:scale-105 transition-transform duration-1000 shadow-md">
+      <article className="cursor-pointer relative w-72 mt-10 mr-5  flex flex-col overflow-hidden rounded-lg border hover:shadow-purple-900 hover:scale-105 transition-transform duration-1000 shadow-md">
         <div className="aspect-square h-56 pt-0 overflow-hidden">
           <img
             className="h-50 w-64 m-auto object-cover object-center transition-all duration-300 group-hover:scale-125"
