@@ -6,23 +6,9 @@ import adminlogo from "../assets/images/admin.svg";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setNav(true);
-      } else {
-        setNav(false);
-      }
-    };
 
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   return (
-    <nav className={`border-b-2  ${nav ? "border-purple-600 shadow-md" : "border-white"}`}>
+    <nav className="border-b-2 border-purple-600 fixed w-full z-10 bg-black" >
 
 
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -31,7 +17,7 @@ const Navbar = () => {
             <button
               type="button"
               onClick={() => setNav((prev) => !prev)}
-              className="relative inline-flex items-center justify-center rounded-md p-2 text-purple-950 hover:bg-purple-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="relative inline-flex items-center justify-center rounded-md p-2 text-purple-500 hover:bg-purple-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
@@ -71,7 +57,7 @@ const Navbar = () => {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
-              <img className="h-8 w-auto" src={logo} alt="Your Company" />
+              <img className="h-8 w-auto " src={logo} alt="Your Company" />
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4 pt-2">
@@ -79,7 +65,7 @@ const Navbar = () => {
                   <NavLink
                     to={link.value}
                     className={({ isActive, isPending }) =>
-                      `text-black-300 text-[18px] pt-[7px] hover:bg-black hover:text-white rounded-md px-3 py-2 text-sm font-medium ${
+                      `text-purple-400 text-[14px] pt-[7px] hover:bg-white hover:text-purple-900 rounded-md px-3 py-2  font-medium ${
                         isPending
                           ? "pending"
                           : isActive
@@ -117,7 +103,7 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`${nav ? "block" : "hidden"} sm:hidden bg-white`}
+        className={`${nav ? "block" : "hidden"} sm:hidden bg-black`}
         id="mobile-menu"
       >
         <div className="space-y-1 px-2 pb-3 pt-2">
@@ -178,7 +164,7 @@ const Navbar = () => {
             <NavLink
               to={link.value}
               className={({ isActive, isPending }) =>
-                ` text-black font-semibold block rounded-md text-center m-auto px-3 py-2 text-base  ${
+                `  font-semibold block rounded-md text-center hover:bg-white hover:text-purple-900 text-purple-400 m-auto px-3 py-2 text-base  ${
                   isPending
                     ? "pending"
                     : isActive

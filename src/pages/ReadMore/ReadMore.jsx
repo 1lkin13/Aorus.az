@@ -47,7 +47,7 @@ const ReadMore = () => {
 
   return (
     <>
-    <section className="text-gray-700 body-font">
+    <section className="text-gray-700 body-font pt-10">
       <div className="container px-5 py-12 mx-auto">
         <div className="lg:w-4/5 mx-auto rounded shadow-yellow-300 flex flex-wrap bg-white relative">
           <div className="lg:w-1/2 w-full md:w-3/4 rounded relative">

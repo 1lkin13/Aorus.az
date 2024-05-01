@@ -8,7 +8,7 @@ function Contact() {
     
   
   {/* Container for demo purpose */}
-  <div className="container  py-12 mx-auto px-4 md:px-6 lg:px-12 dark:bg-gray-900">
+  <div className="container  pt-24 py-12 mx-auto px-4 md:px-6 lg:px-12 dark:bg-gray-900">
     {/*Section: Design Block*/}
     <section className="mb-20 text-gray-800">
       <h3 className="text-3xl font-bold text-center mb-4 text-white">Contact</h3>

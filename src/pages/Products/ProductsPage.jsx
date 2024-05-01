@@ -57,12 +57,12 @@ export default function ProductsPage() {
             <Slide /> 
           </div>
         </div>
-        <div className="w-1/3 h-full flex justify-around">
+        <div className="w-1/3 h-full flex justify-around ">
           <MarqueeRight /> 
         </div>
       </div>
       <div className="w-full bg-neutral-100">
-        <div className='w-full bg-purple-500'> <h1 className="text-center font-bold text-5xl font-sans pt-5 h-5">
+        <div className='w-full'> <h1 className="text-center text-purple-800  font-bold text-5xl font-sans pt-5 h-5">
           Məhsullar
         </h1>
         <div className="flex flex-wrap justify-center items-center h-44">
@@ -71,7 +71,7 @@ export default function ProductsPage() {
         </div>
 </div>
        
-        <div className="flex flex-wrap h-auto  pl-7 justify-start  bg-white">
+        <div className="flex flex-wrap h-auto  pl-71 justify-start  bg-white">
           {filteredProducts.map((product, index) => (
             <Card key={index} product={product} />
           ))}

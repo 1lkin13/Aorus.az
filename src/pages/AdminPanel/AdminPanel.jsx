@@ -185,7 +185,7 @@ const AdminPanel = () => {
   };
 
   return (
-    <div className="admin-panel">
+    <div className="admin-panel ">
       <div className="flex justify-between">
         <h2 className="h2 font-bold">Salam Dəyərli Admin ❤️</h2>
         <button onClick={() => openModal()} className="add-button">

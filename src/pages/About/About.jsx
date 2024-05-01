@@ -3,8 +3,8 @@ import Footer from "../../components/footer";
 
 const About = () => {
   return (
-    <>
-      <section className="mx-auto dark:bg-gray-900 flex max-w-lg flex-col px-4 py-10 lg:max-w-screen-xl lg:flex-row">
+    < div className="w-full dark:bg-gray-900">
+      <section className="w-full mx-auto dark:bg-gray-900  pt-32 flex max-w-lg flex-col  py-10 lg:max-w-screen-xl lg:flex-row">
         <div className="max-w-md pr-20 lg:pt-28">
           <img
             src="https://dlcdnrog.asus.com/rog/media/1652407699784.webp"
@@ -122,7 +122,7 @@ const About = () => {
       </section>
       {/* Photo by '@candjstudios' & '@framesforyourheart' on Unsplash */}
       <Footer />
-    </>
+    </div>
   );
 };
 

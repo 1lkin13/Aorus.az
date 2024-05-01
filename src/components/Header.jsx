@@ -5,19 +5,19 @@ function Header() {
     <>
  
    
-      <div className="relative flex flex-col px-4 sm:max-w-xl md:max-w-screen-xl md:flex-row">
+      <div className="relative flex flex-col px-4 pt-10 sm:max-w-xl md:max-w-screen-xl md:flex-row">
         {/* Left Column */}
         <div className="my-auto mx-auto  ml-4 w-full max-w-xl md:mt-20 lg:max-w-screen-xl">
           <div className=" lg:mb-0 lg:max-w-lg">
-            <div className="mb-6 max-w-xl">
+            <div className="mb-6 max-w-xl pt-5">
               <div>
-                <p className="bg-teal-accent-400 mb-2 inline-block rounded-full px-3 py-px text-xs font-semibold uppercase tracking-wider text-indigo-900">
+                <p className="bg-teal-accent-400 mb-2 inline-block rounded-full px-3 py-px text-m font-semibold uppercase tracking-wider text-indigo-900">
                  2021-ci ildən etibarən
                 </p>
               </div>
-              <h2 className="mb-6 max-w-lg text-3xl font-bold tracking-tight text-slate-700 sm:text-5xl sm:leading-snug">
-                Azərbaycanın <br />
-                <span className="inline-block font-bold text-purple-600">
+            <h2 className="mb-6 max-w-lg font-bold tracking-tight text-slate-700 sm:text-8xl sm:leading-snug">
+              <span className='text-4xl'>Azərbaycanın</span> <br />
+                <span className="inline-block font-bold text-4xl text-purple-600">
                   Ən Böyük Komputer Mağazası
                 </span>
               </h2>
@@ -28,7 +28,7 @@ function Header() {
             <div className="flex items-center">
               <a
                 href="/"
-                className="mr-6 inline-flex h-12 items-center justify-center rounded bg-purple-600 px-6 font-medium tracking-wide text-white shadow-md outline-none transition duration-200 hover:bg-orange-400 focus:ring"
+                className="mr-6 inline-flex h-12 items-center justify-center rounded bg-purple-600 px-6 font-medium tracking-wide text-white shadow-md outline-none transition duration-200 hover:bg-purple-900 focus:ring"
               >
               
                Haqqımızda
@@ -39,7 +39,7 @@ function Header() {
         </div>
         {/* /Left Column */}
         {/* Right Column */}
-        <div className="flex h-full w-full space-x-3 overflow-hidden md:justify-end lg:px-2">
+        <div className="flex h-full w-full space-x-3 overflow-hidden md:justify-end pt-6 lg:px-2 ">
           {/* Col 2 */}
           <div className="my-auto hidden w-56 flex-col space-y-3 md:mt-20 lg:flex">
             <div className="rounded-xl bg-yellow-400 h-96">
