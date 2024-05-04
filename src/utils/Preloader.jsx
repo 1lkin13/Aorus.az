@@ -6,7 +6,7 @@ const Preloader = ({ children }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 1500);
     return () => clearTimeout(timer);
   }, []);
   useEffect(() => {
@@ -14,7 +14,7 @@ const Preloader = ({ children }) => {
   }, [loading]);
   return loading ? (
     <div className={`preloader ${"show"}`}>
-      <div className="svg-container">
+      <div className="svg-container w-72">
         <img src={loader} alt="Loading..." className="loader-svg" />
       </div>
     </div>

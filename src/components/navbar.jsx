@@ -8,7 +8,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   return (
-    <nav className="border-b-2 border-purple-600 fixed w-full z-10 bg-black" >
+    <nav className="border-b-2 border-purple-600 fixed w-full  z-10 bg-black" >
 
 
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">

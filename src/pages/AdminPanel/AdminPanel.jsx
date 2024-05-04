@@ -185,7 +185,7 @@ const AdminPanel = () => {
   };
 
   return (
-    <div className="admin-panel ">
+    <div className="admin-panel  ">
       <div className="flex justify-between">
         <h2 className="h2 font-bold">Salam Dəyərli Admin ❤️</h2>
         <button onClick={() => openModal()} className="add-button">
@@ -407,11 +407,11 @@ const AdminPanel = () => {
                     <option value="Lenovo">Lenovo</option>
                     <option value="Digər">Digər</option>
 
-                    {models.map((model) => (
+                    {/* {models.map((model) => (
                       <option key={model.id} value={model.name}>
                         {model.name}
                       </option>
-                    ))}
+                    ))} */}
                   </select>
                 </div>
 
@@ -435,11 +435,11 @@ const AdminPanel = () => {
                     <option value="AMD Ryzen">AMD Ryzen</option>
                     <option value="Digər">Digər</option>
 
-                    {processors.map((processor) => (
+                    {/* {processors.map((processor) => (
                       <option key={processor.id} value={processor.name}>
                         {processor.name}
                       </option>
-                    ))}
+                    ))} */}
                   </select>
                 </div>
 
@@ -461,11 +461,11 @@ const AdminPanel = () => {
                     <option value="Gaming">Gaming</option>
                     <option value="Digər">Digər</option>
 
-                    {types.map((type) => (
+                    {/* {types.map((type) => (
                       <option key={type.id} value={type.name}>
                         {type.name}
                       </option>
-                    ))}
+                    ))} */}
                   </select>
                 </div>
 
@@ -488,12 +488,12 @@ const AdminPanel = () => {
                     <option value="RTX 4080">RTX 4080</option>
                     <option value="RTX 4090">RTX 4090</option>
                     <option value="Digər">Digər</option>
-
+{/* 
                     {videoCards.map((videoCard) => (
                       <option key={videoCard.id} value={videoCard.name}>
                         {videoCard.name}
                       </option>
-                    ))}
+                    ))} */}
                   </select>
                 </div>
 

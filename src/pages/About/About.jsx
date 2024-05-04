@@ -3,18 +3,19 @@ import Footer from "../../components/footer";
 
 const About = () => {
   return (
-    < div className="w-full dark:bg-gray-900">
+    < div className="w-full dark:bg-gray-900 p-2">
       <section className="w-full mx-auto dark:bg-gray-900  pt-32 flex max-w-lg flex-col  py-10 lg:max-w-screen-xl lg:flex-row">
-        <div className="max-w-md pr-20 lg:pt-28">
+        <div className="max-w-md pr-0 sm:pr-16  rounded-md lg:pt-28">
           <img
+          className="rounded-xl"
             src="https://dlcdnrog.asus.com/rog/media/1652407699784.webp"
             alt=""
           />
         </div>
         <div className="">
-          <h2 className="mb-10 max-w-lg text-4xl font-bold leading-snug lg:text-5xl text-white lg:leading-snug">
-            <span className="text-purple-400">AORUS</span> sizin üçün edir
-          </h2>
+          <div className="mb-10 max-w-lg sm:mt-0 mt-10 font-bold leading-snug lg:text-3xl text-3xl text-white lg:leading-snug">
+            <span className="text-purple-400 text-4xl">AORUS</span> sizin üçün edir
+          </div>
           <div className="grid gap-y-12 gap-x-8 lg:grid-cols-2">
             <div>
               <p className="mb-6 border-l-4 text-purple-400 font-bold border-purple-600 pl-4 text-2xl leading-10">

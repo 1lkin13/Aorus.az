@@ -23,94 +23,6 @@
       "videocard": "4070"
     },
     {
-      "id": "92c5",
-      "title": "Asus ZenBook 14X OLED UX5401EA-L7111",
-      "price": "2099",
-      "discountedPrice": "1899",
-      "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/a1b244ae-1213-4dfb-b77e-387a89283087.webp",
-      "additionalImages": [
-        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/47d888e7-fe47-480e-a84f-d60712b7e3d2.webp",
-        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/ff7ccd57-68f5-4df7-854a-b179b621e049.webp"
-      ],
-      "stock": false,
-      "CPU": " Intel® Core™ i5-1135G7",
-      "RAM": " 16 GB LPDDR4X 4266MHz",
-      "SSD": "512 GB M.2 NVMe™ PCIe® 4.0",
-      "GFX": " Intel® Iris Xe Graphics",
-      "LCD": "14.0\" WQXGA OLED 90Hz",
-      "OS": "FreeDos",
-      "model": "Asus",
-      "processor": "Intel",
-      "type": "Business",
-      "videocard": "Digər"
-    },
-    {
-      "id": "99dc",
-      "title": "Acer Aspire 5 A515-58M-39AP NX.KHEER.001",
-      "price": "1280",
-      "discountedPrice": "999",
-      "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/Acer-Aspire-5-A515-58M-532W_1tidvH.webp",
-      "additionalImages": [
-        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/Acer-Aspire-5-A515-58M-532W_2XJof5.webp",
-        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/Acer-Aspire-5-A515-58M-532W_5jM1PA.webp"
-      ],
-      "stock": true,
-      "CPU": "Intel® Core™ i3-1315U",
-      "RAM": " 8 GB LPDDR5 4800MHz",
-      "SSD": "512 GB M.2 NVMe™ PCIe®",
-      "GFX": "Intel® Iris® Xᵉ Graphics",
-      "LCD": "15.6\" FHD (1920 x 1080) IPS",
-      "OS": "FreeDos",
-      "model": "Acer",
-      "processor": "Intel",
-      "type": "Business",
-      "videocard": "Digər"
-    },
-    {
-      "id": "0b23",
-      "title": "HP OMEN 16-xf0033dx 7N9X4UA",
-      "price": "3139",
-      "discountedPrice": "2949",
-      "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/f284098e-b376-402d-945a-a96054066724.webp",
-      "additionalImages": [
-        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/a04e5aff-9d37-4458-beb1-cb809ea27c57.webp",
-        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/bd1a0ab9-4fb3-4b41-b1b3-2fdb3ff52dd6.webp"
-      ],
-      "stock": false,
-      "CPU": " AMD® Ryzen™ 9 7940HS",
-      "RAM": " 16 GB DDR5 5200MHz",
-      "SSD": "512 GB M.2 NVMe™ PCIe®",
-      "GFX": "NVIDIA GeForce RTX 4070 8GB",
-      "LCD": "16.0\" FHD IPS 165Hz",
-      "OS": "Windows 11 Home",
-      "model": "HP",
-      "processor": "AMD Ryzen",
-      "type": "Gaming",
-      "videocard": "RTX 4070"
-    },
-    {
-      "id": "6638",
-      "title": "Lenovo Legion 5 15IAH7 82RC0031RK",
-      "price": "2149",
-      "discountedPrice": "1999",
-      "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/8a5ae89e-d900-4b69-839d-81db891ccd0e.webp",
-      "additionalImages": [
-        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/8d963bb4-432a-4238-a228-2c000e5d5da5.webp",
-        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/2584182d-cd0c-4f42-8cf8-cd3b1f99017b.webp"
-      ],
-      "stock": true,
-      "CPU": "Intel® Core™ i5-12500H",
-      "RAM": "16 GB DDR5 4800MHz",
-      "SSD": "512 GB M.2 NVMe™ PCIe®",
-      "GFX": "NVIDIA GeForce RTX 3050Ti 4GB",
-      "LCD": " 15.6\" FHD (1920x1080) IPS",
-      "OS": "Windows 11 Home",
-      "model": "Lenovo",
-      "processor": "Intel",
-      "type": "Gaming",
-      "videocard": "Digər"
-    },
-    {
       "id": "5d67",
       "title": "Dell Latitude 3520",
       "price": "1679",
@@ -131,6 +43,226 @@
       "processor": "Intel",
       "type": "Business",
       "videocard": "Digər"
+    },
+    {
+      "id": "ef55",
+      "title": "Lenovo Legion 5 Pro 16IAH7 82S00003US",
+      "price": "2799",
+      "discountedPrice": "2699",
+      "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/e322c476-304f-4f62-9519-47d422b5deca.webp",
+      "additionalImages": [
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/7fd28a88-ea71-468a-aa33-bd0661be1307.webp",
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/36e68ed6-a30a-444f-9657-11b131e54c31.webp"
+      ],
+      "stock": true,
+      "CPU": "Intel® Core™ i7-12700H",
+      "RAM": "16 GB DDR5 4800MHz",
+      "SSD": "512 GB M.2 NVMe™ PCIe®",
+      "GFX": "NVIDIA GeForce RTX 4050 6GB",
+      "LCD": "16.0\" WQXGA IPS 165Hz",
+      "OS": "Windows 11 Home",
+      "model": "Lenovo",
+      "processor": "Intel",
+      "type": "Gaming",
+      "videocard": "RTX 4050"
+    },
+    {
+      "id": "e0f6",
+      "title": "MSI Sword 15 A12VE-1400US Gamig Laptop",
+      "price": "2299",
+      "discountedPrice": "2199",
+      "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/25070093-d6b4-4cba-9f5a-093e1a14d37e.webp",
+      "additionalImages": [
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/bc15552c-701e-4024-b066-e0c0914ffac2.webp",
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/4aa93cda-6911-4206-8566-ccdba89a70bb.webp"
+      ],
+      "stock": false,
+      "CPU": "Intel® Core™ i7-12650H",
+      "RAM": "16 GB DDR5 4800MHz",
+      "SSD": "512 GB M.2 NVMe™ PCIe®",
+      "GFX": "NVIDIA GeForce RTX 4050 6GB",
+      "LCD": "15.6\" FHD IPS 144Hz",
+      "OS": "Windows 11 Home",
+      "model": "",
+      "processor": "",
+      "type": "",
+      "videocard": ""
+    },
+    {
+      "id": "815e",
+      "title": "Asus TUF Gaming F17 FX707ZU4-HX019",
+      "price": "2489",
+      "discountedPrice": "2379",
+      "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/266f62b7-2d52-4739-9fdd-1c00a399b3c4.webp",
+      "additionalImages": [
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/c64da0c0-06eb-4b00-922f-b9f022ce4445.webp",
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/5f098c0f-baf4-44d2-b63d-d80f48c3f287.webp"
+      ],
+      "stock": true,
+      "CPU": " Intel® Core™ i7-12700H",
+      "RAM": "16 GB DDR4 3200MHz",
+      "SSD": "512 GB M.2 NVMe™ PCIe®",
+      "GFX": "NVIDIA GeForce RTX 4050 6GB",
+      "LCD": "17.3\" FHD IPS 144Hz",
+      "OS": "FreeDos",
+      "model": "Asus",
+      "processor": "Intel",
+      "type": "Gaming",
+      "videocard": "RTX 4050"
+    },
+    {
+      "id": "8235",
+      "title": "Asus ROG Strix G16 G614JI-AS94 90NR0D41-M00120",
+      "price": "4028",
+      "discountedPrice": "3899",
+      "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/95773efd-8275-49e2-8e26-780e199dc9b4.webp",
+      "additionalImages": [
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/f785ba55-ff7c-4f73-8925-61a3af2d5afb.webp",
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/aca95d9f-b3f5-4011-94c9-06d483be66cc.webp"
+      ],
+      "stock": true,
+      "CPU": "Intel® Core™ i9-13980HX",
+      "RAM": "16 GB DDR5 4800MHz",
+      "SSD": "1 TB M.2 NVMe™ PCIe®",
+      "GFX": "NVIDIA GeForce RTX 4070 8GB",
+      "LCD": " 16.0\" WUXGA IPS 165Hz",
+      "OS": "Windows 11 Home",
+      "model": "Asus",
+      "processor": "Intel",
+      "type": "Gaming",
+      "videocard": "RTX 4070"
+    },
+    {
+      "id": "833b",
+      "title": "HP Pavilion 15-eg3018ci 7P433EA",
+      "price": "1478",
+      "discountedPrice": "1299",
+      "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/e3029f72-2d14-401a-9363-09c06d363e61.webp",
+      "additionalImages": [
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/26c36175-3f38-41fd-9387-2e502014a4f3.webp",
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/7b80bb25-ccb4-4351-b722-5a75cb00d09a.webp"
+      ],
+      "stock": false,
+      "CPU": "Intel® Core™ i5-1335U",
+      "RAM": " 8 GB DDR4 3200MHz",
+      "SSD": "512 GB M.2 NVMe™ PCIe®",
+      "GFX": " Intel® Iris® Xᵉ Graphics",
+      "LCD": "15.6\" FHD (1920 x 1080) IPS",
+      "OS": "FreeDos",
+      "model": "HP",
+      "processor": "Intel",
+      "type": "Business",
+      "videocard": "Digər"
+    },
+    {
+      "id": "ae3b",
+      "title": "Acer Swift 3 SF314-71-780S NX.KADER.001",
+      "price": "1659",
+      "discountedPrice": "1599",
+      "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/Acer-Swift-3-OLED-SF314-71-780S_1RJzaE.webp",
+      "additionalImages": [
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/Acer-Swift-3-OLED-SF314-71-780S_49B_O6.webp",
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/Acer-Swift-3-OLED-SF314-71-780S_2UEjxJ.webp"
+      ],
+      "stock": true,
+      "CPU": "Intel® Core™ i7-12650H",
+      "RAM": "16 GB LPDDR5",
+      "SSD": "1 TB M.2 NVMe™ PCIe®",
+      "GFX": " Intel® Iris® Xe Graphics",
+      "LCD": "14.0\" 2.8K OLED 60Hz",
+      "OS": "FreeDos",
+      "model": "Acer",
+      "processor": "Intel",
+      "type": "Dizayn",
+      "videocard": "Digər"
+    },
+    {
+      "id": "8cb1",
+      "title": "HP Envy x360 15-fh0097nr 2-in-1 Laptop 7N486UA",
+      "price": "2028",
+      "discountedPrice": "1949",
+      "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/HP-Envy-x360-2-in-1-Laptop-15-fh0097nr_1vUB2B.webp",
+      "additionalImages": [
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/HP-Envy-x360-2-in-1-Laptop-15-fh0097nr_2xsSCo.webp",
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/HP-Envy-x360-2-in-1-Laptop-15-fh0097nr_4QJ9Si.webp"
+      ],
+      "stock": false,
+      "CPU": "AMD Ryzen™ 7 7730U",
+      "RAM": "16 GB LODDR4x 4266MHz",
+      "SSD": "1 TB M.2 NVMe™ PCIe®",
+      "GFX": "AMD Radeon™ Graphics",
+      "LCD": "15.6\" FHD OLED UWVA TouchScreen",
+      "OS": "Windows 11 Home",
+      "model": "HP",
+      "processor": "AMD Ryzen",
+      "type": "Business",
+      "videocard": "Digər"
+    },
+    {
+      "id": "a1b4",
+      "title": "HP OMEN 15-en1570wm 46B26UA",
+      "price": "2948",
+      "discountedPrice": "2749",
+      "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/0bd49a3e-b88b-4ef5-ae77-9d91d5442779.webp",
+      "additionalImages": [
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/849774e8-c5d7-48cd-90cf-aa8a5ef350b2.webp",
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/40f5a5af-ec53-4c14-8c46-ebd17048c27f.webp"
+      ],
+      "stock": true,
+      "CPU": "AMD Ryzen™ 7-5800H",
+      "RAM": "16 GB DDR4 3200MHz",
+      "SSD": "1 TB PCIe® NVMe™ TLC M.2",
+      "GFX": "NVIDIA GeForce RTX 4060 6GB",
+      "LCD": "15.6\" FHD IPS 144Hz 7ms",
+      "OS": "Windows 10 Home",
+      "model": "HP",
+      "processor": "AMD Ryzen",
+      "type": "Dizayn",
+      "videocard": "RTX 4060"
+    },
+    {
+      "id": "ce19",
+      "title": "Acer Predator Helios Neo 16 PHN16-71-73LT NH.QMBAA.001",
+      "price": "2899",
+      "discountedPrice": "2799",
+      "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/Acer-Predator-Helios-Neo-16-PHN16-71-73LT_19G8lV.webp",
+      "additionalImages": [
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/Acer-Predator-Helios-Neo-16-PHN16-71-73LT_2OrDUF.webp",
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/Acer-Predator-Helios-Neo-16-PHN16-71-73LT_4cHBej.webp"
+      ],
+      "stock": false,
+      "CPU": "Intel® Core™ i7-13700HX",
+      "RAM": "16 GB DDR5 4800MHz",
+      "SSD": "1 TB M.2 NVMe™ PCIe®",
+      "GFX": "NVIDIA GeForce RTX 4080 12GB",
+      "LCD": "16.0\" WQXGA LED 165Hz",
+      "OS": "Windows 11 Home",
+      "model": "Acer",
+      "processor": "Intel",
+      "type": "Gaming",
+      "videocard": "RTX 4080"
+    },
+    {
+      "id": "c4af",
+      "title": "Dell G5 15 5520",
+      "price": "3789",
+      "discountedPrice": "3459",
+      "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/2e2ca4e4-9de3-4d0a-a2f7-8d1da421bc0c.webp",
+      "additionalImages": [
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/4365d80a-b1c6-4167-9787-2de9644cfbeb.webp",
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/c3a0b099-2137-4be6-8bfd-ca2409945f0f.webp"
+      ],
+      "stock": true,
+      "CPU": " Intel® Core™ i7-12700H",
+      "RAM": "16 GB DDR4 3200MHz",
+      "SSD": " 512 GB M.2 NVMe™ PCIe®",
+      "GFX": "NVIDIA GeForce RTX 4090 12GB",
+      "LCD": " 15.6\" FHD IPS 120Hz",
+      "OS": "Windows 11 Home",
+      "model": "Dell",
+      "processor": "Intel",
+      "type": "Dizayn",
+      "videocard": "RTX 4090"
     }
   ]
 }

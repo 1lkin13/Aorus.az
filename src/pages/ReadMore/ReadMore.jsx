@@ -77,14 +77,14 @@ const ReadMore = () => {
             <h2 className="text-sm font-bold title-font text-purple-800 tracking-widest">Model Adı</h2>
             <h1 className="text-gray-900 text-3xl title-font font-medium mb-1">{product.title}</h1>
           
-            <div className="flex mt-6 items-center pb-5 border-b-2 border-purple-200 mb-5">
-              <ul className="leading-relaxed">
-                <li><strong>CPU:</strong> {product.CPU}</li>
-                <li><strong>RAM:</strong> {product.RAM}</li>
-                <li><strong>SSD:</strong> {product.SSD}</li>
-                <li><strong>GFX:</strong> {product.GFX}</li>
-                <li><strong>LCD:</strong> {product.LCD}</li>
-                <li><strong>OS:</strong> {product.OS}</li>
+            <div className="flex mt-6 items-center text-purple-900 font-bold pb-5 border-b-2 border-purple-200 mb-5">
+              <ul className="leading-relaxed ">
+                <li><strong className='text-black'>CPU:</strong> {product.CPU}</li>
+                <li><strong className='text-black'>RAM:</strong> {product.RAM}</li>
+                <li><strong className='text-black'>SSD:</strong> {product.SSD}</li>
+                <li><strong className='text-black'>GFX:</strong> {product.GFX}</li>
+                <li><strong className='text-black'>LCD:</strong> {product.LCD}</li>
+                <li><strong className='text-black'>OS:</strong> {product.OS}</li>
               </ul>
             </div>
             <div className="flex items-center justify-around flex-wrap">
@@ -102,7 +102,7 @@ const ReadMore = () => {
         </div>
       </div>
     </section>
-    <Footer></Footer>
+    <Footer/>
     </>
   );
 };

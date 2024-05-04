@@ -15,12 +15,12 @@ function Header() {
                  2021-ci ildən etibarən
                 </p>
               </div>
-            <h2 className="mb-6 max-w-lg font-bold tracking-tight text-slate-700 sm:text-8xl sm:leading-snug">
-              <span className='text-4xl'>Azərbaycanın</span> <br />
-                <span className="inline-block font-bold text-4xl text-purple-600">
+            <div className="mb-6 max-w-lg font-bold tracking-tight text-slate-700  ">
+              <h1 className='text-5xl'>Azərbaycanın</h1> <br />
+                <h1 className="inline-block font-bold text-4xl text-purple-600">
                   Ən Böyük Komputer Mağazası
-                </span>
-              </h2>
+                </h1>
+              </div>
               <p className="text-base text-gray-700 md:text-lg">
               Aourus, elektronika və kompüter satışı ilə məşğul olan bir mağazadır. Biz müştərilərimizə son texnologiyalarla uyğun elektronika və kompüter məhsullarını təqdim edirik
               </p>

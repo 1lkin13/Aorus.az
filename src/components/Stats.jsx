@@ -11,22 +11,22 @@ function Stats() {
     </div>
     <div className="mx-auto px-4 sm:px-6 lg:px-8">
      
-        <h2 className=" font-semibold leading-7 sm:text-center text-gray-900 sm:text-8xl xl:text-5xl">
-          Biz <br className="sm:hidden" />
+        <h3 className="font-semibold  sm:text-center text-gray-900 text-3xl ">
+          Biz 
           sürətlə böyüyürük
-        </h2>
+        </h3>
         <hr className="mt-4 h-1.5 w-32 border-none bg-purple-600 sm:mx-auto sm:mt-8" />
       
       <div className="mx-auto mt-20 grid max-w-screen-lg grid-cols-1 gap-x-8 gap-y-12 text-center sm:text-left md:grid-cols-3">
         <div className="backdrop-blur-lg relative mb-3 rounded-3xl border bg-white/70 px-12 py-10 text-left shadow lg:px-12">
-          <p className="relative text-5xl font-black text-purple-600">25M</p>
+          <p className="relative text-5xl font-black text-purple-600">2500+</p>
           <p className="relative mt-5 text-gray-600">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
             doloremque vel
           </p>
         </div>
         <div className="backdrop-blur-lg relative mb-3 rounded-3xl border bg-white/70 px-12 py-10 text-left shadow lg:px-12">
-          <p className="relative text-5xl font-black text-purple-600">51%</p>
+          <p className="relative text-5xl font-black text-purple-600">90+</p>
           <p className="relative mt-5 text-gray-600">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
             doloremque vel

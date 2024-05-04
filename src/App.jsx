@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
       <div className="app">
-        {/* <Preloader> */}
+        <Preloader>
         
         <Routes>
           <Route element={
@@ -34,7 +34,7 @@ function App() {
 
           
         </Routes>
-        {/* </Preloader> */}
+        </Preloader>
       </div>
     </Router>
   );

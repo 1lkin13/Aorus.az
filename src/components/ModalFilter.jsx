@@ -50,7 +50,7 @@ const ModalFilter = ({ products, applyFilters }) => {
 
   return (
     < div className="">
-     <button onClick={openModal} className=" right-0 mr-1 inline-flex h-12 items-center justify-center rounded-lg bg-gray-900 px-6 font-medium text-white focus:ring-4 hover:bg-gray-700">
+     <button onClick={openModal} className=" right-0 mr-1 inline-flex h-12 items-center justify-center rounded-lg  bg-purple-700  px-6 font-medium text-white focus:ring-4 hover:bg-gray-700">
   Filtirləmə
 </button>
 
@@ -61,35 +61,35 @@ const ModalFilter = ({ products, applyFilters }) => {
               <div className="absolute inset-0 bg-gray-500 opacity-75"></div>
             </div>
             <span className="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
-            <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
-              <div className="bg-white  px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+            <div className="inline-block align-bottom dark:bg-gray-800  rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+              <div className="dark:bg-gray-800  px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                 <div className="sm:flex  flex-wrap sm:items-start">
                   <div className="mt-3 w-full text-center sm:mt-0 sm:ml-4 sm:text-left">
-                    <h3 className="text-lg font-medium leading-6 text-gray-900" id="modal-headline">
+                    <h3 className="text-lg font-medium leading-6 text-white" id="modal-headline">
                       Ətraflı Axtarış
                     </h3>
                     <div className="mb-4">
-                      <label htmlFor="selectProcessor" className="text-stone-600 text-sm font-medium">
+                      <label htmlFor="selectProcessor" className="text-purple-500  text-sm font-medium">
                         Prossesor Növü
                       </label>
                       <select
                         id="selectProcessor"
-                        className="mt-2 block w-full rounded-md border border-gray-200 px-2 py-2 shadow-sm outline-none focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                        className="mt-2 block w-full rounded-md border cursor-pointer border-purple-200 px-2 py-2 shadow-sm outline-none focus:border-purple-500 focus:ring focus:ring-purple-300 focus:ring-opacity-50"
                         value={selectedProcessor}
                         onChange={(e) => setSelectedProcessor(e.target.value)}
                       >
-                        <option value="">Hamısı</option>
+                        <option value="" >Hamısı</option>
                         <option value="Intel">Intel</option>
                         <option value="AMD Ryzen">AMD Ryzen</option>
                       </select>
                     </div>
                     <div className="mb-4">
-                      <label htmlFor="selectType" className="text-stone-600 text-sm font-medium">
+                      <label htmlFor="selectType" className="text-purple-500 text-sm font-medium">
                         İstifadə Sahəsi
                       </label>
                       <select
                         id="selectType"
-                        className="mt-2 block w-full rounded-md border border-gray-200 px-2 py-2 shadow-sm outline-none focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                        className="mt-2 block w-full rounded-md border border-gray-200 px-2 py-2 shadow-sm outline-none  focus:border-purple-500 focus:ring focus:ring-purple-300 focus:ring-opacity-50"
                         value={selectedType}
                         onChange={(e) => setSelectedType(e.target.value)}
                       >
@@ -100,12 +100,12 @@ const ModalFilter = ({ products, applyFilters }) => {
                       </select>
                     </div>
                     <div className="mb-4">
-                      <label htmlFor="selectModel" className="text-stone-600 text-sm font-medium">
+                      <label htmlFor="selectModel" className="text-purple-500 text-sm font-medium">
                         Model
                       </label>
                       <select
                         id="selectModel"
-                        className="mt-2 block w-full rounded-md border border-gray-200 px-2 py-2 shadow-sm outline-none focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                        className="mt-2 block w-full rounded-md border border-gray-200 px-2 py-2 shadow-sm outline-none  focus:border-purple-500 focus:ring focus:ring-purple-300 focus:ring-opacity-50"
                         value={selectedModel}
                         onChange={(e) => setSelectedModel(e.target.value)}
                       >
@@ -120,12 +120,12 @@ const ModalFilter = ({ products, applyFilters }) => {
                       </select>
                     </div>
                     <div className="mb-4">
-                      <label htmlFor="selectStock" className="text-stone-600 text-sm font-medium">
+                      <label htmlFor="selectStock" className="text-purple-500 text-sm font-medium">
                         Stok Statusu
                       </label>
                       <select
                         id="selectStock"
-                        className="mt-2 block w-full rounded-md border border-gray-200 px-2 py-2 shadow-sm outline-none focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                        className="mt-2 block w-full rounded-md border border-gray-200 px-2 py-2 shadow-sm outline-none  focus:border-purple-500 focus:ring focus:ring-purple-300 focus:ring-opacity-50"
                         value={selectedStock}
                         onChange={(e) => setSelectedStock(e.target.value)}
                       >
@@ -135,12 +135,12 @@ const ModalFilter = ({ products, applyFilters }) => {
                       </select>
                     </div>
                     <div className="mb-4">
-                      <label htmlFor="selectGraphicsCard" className="text-stone-600 text-sm font-medium">
+                      <label htmlFor="selectGraphicsCard" className="text-purple-500 text-sm font-medium">
                         Ekran Kartı
                       </label>
                       <select
                         id="selectGraphicsCard"
-                        className="mt-2 block w-full rounded-md border border-gray-200 px-2 py-2 shadow-sm outline-none focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+                        className="mt-2 block w-full rounded-md border border-gray-200 px-2 py-2 shadow-sm outline-none  focus:border-purple-500 focus:ring focus:ring-purple-300 focus:ring-opacity-50"
                         value={selectedGraphicsCard}
                         onChange={(e) => setSelectedGraphicsCard(e.target.value)}
                       >

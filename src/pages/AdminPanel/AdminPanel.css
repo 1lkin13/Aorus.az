@@ -79,7 +79,10 @@ table {
   background-color: rgba(0, 0, 0, 0.5);
   overflow-y: auto; /* İçeriğin ekran boyutuna göre kaydırılmasını sağlar */
 }
-
+.product-table-container {
+  overflow-x: auto;
+  max-width: 100%;
+}
 .modal-content {
   /* /* background-color: #1b4563; */
 /* background: rgb(26, 39, 67); */
@@ -111,9 +114,11 @@ background-color: #f8f5f5;
 
 /* Ürün tablosu stilleri */
 .product-table {
+  
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
+  overflow-x: auto;
   
 }
 

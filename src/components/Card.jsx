@@ -15,8 +15,8 @@ const Card = ({ product }) => {
           />
         </div>
         <div className="absolute top-0 m-2 rounded-full bg-white">
-          <p className="rounded-full bg-purple-500 p-1 text-[12px] font-bold uppercase tracking-wide text-white sm:py-1 sm:px-3">
-            20%
+          <p className="rounded-full bg-gray-900 p-1 text-[12px] font-bold  tracking-wide text-white sm:py-1 sm:px-3">
+            Yeni
           </p>
         </div>
         <div className="my-4 mx-auto flex w-10/12 flex-col items-start justify-between"> 
