@@ -55,8 +55,8 @@ const HomePage = () => {
             <Card key={product.id} product={product} />
           ))}
         </div>
-        <div className="flex justify-center mt-8  bg-slate-50 ">
-          <button type="button" className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 transition duration-300 ease-in-out transform hover:scale-105 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">
+        <div className="flex justify-center mt-8   bg-slate-50 ">
+          <button type="button" className="focus:outline-none mb-6 text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 transition duration-300 ease-in-out transform hover:scale-105 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">
            <Link to={`/productspage`} className="flex font-sans items-end justify-end text-white">
              Daha Çox
 
@@ -66,7 +66,7 @@ const HomePage = () => {
       </div>
       <div className=" w-full ">
         
-      <h1 className="text-center font-bold text-3xl font-sans mt-24  h-8">Onlar Bizi Seçdilər</h1>
+      <h1 className="text-center font-bold text-3xl font-sans mt-16   h-8">Onlar Bizi Seçdilər</h1>
 
         <Review/>
         

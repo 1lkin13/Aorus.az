@@ -10,14 +10,14 @@ function Contact() {
   {/* Container for demo purpose */}
   <div className="container  pt-24 py-12 mx-auto px-4 md:px-6 lg:px-12 dark:bg-gray-900">
     {/*Section: Design Block*/}
-    <section className="mb-20 text-gray-800">
-      <h3 className="text-3xl font-bold text-center mb-4 text-white">Contact</h3>
+    <section className="sm:mb-20 text-gray-800">
+      <h3 className="text-5xl font-bold text-center mb-4 text-white">Contact</h3>
       <p className="text-center text-slate-200 mb-10 md:mb-12 mx-auto max-w-3xl">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit qui eveniet
         quibusdam molestias quis dolor nostrum, dolores aut esse explicabo
         corrupti animi autem odit doloribus.
       </p>
-      <div className="md:flex md:flex-wrap">
+      <div className="md:flex md:flex-wrap ">
         <div className="xl:w-6/12 md:w-7/12 mb-6 lg:mb-0 md:pr-3">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12094.57348593182!2d-74.00599512526003!3d40.72586666928451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598f988156a9%3A0xd54629bdf9d61d68!2sBroadway-Lafayette%20St!5e0!3m2!1spl!2spl!4v1624523797308!5m2!1spl!2spl"
@@ -26,10 +26,10 @@ function Contact() {
             loading="lazy"
           />
         </div>
-        <div className="xl:w-6/12 md:w-5/12 md:pl-3">
-          <div className="grid xl:grid-cols-2 xl:grid-rows-2 xl:gap-x-4 md:gap-x-6">
+        <div className="xl:w-6/12 md:w-5/12 md:pl-3 flex justify-center">
+          <div className="grid xl:grid-cols-2 xl:grid-rows-2 xl:gap-x-4 md:gap-x-6 pt-10 ">
             <div className="mb-10 md:mb-12">
-              <div className="flex items-start">
+              <div className="flex items-start ">
                 <div className="shrink-0">
                   <div className="p-4 bg-purple-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
                     <svg
@@ -50,13 +50,13 @@ function Contact() {
                   </div>
                 </div>
                 <div className="grow ml-6">
-                  <p className="font-bold mb-1 text-purple-500">Technical support</p>
-                  <p className="text-slate-200">support@example.com</p>
+                  <p className="font-bold mb-1 text-purple-500">Texniki Dəstək Xətti</p>
+                  <p className="text-slate-200">aorus@support.com</p>
                   <p className="text-slate-400">+1 234-567-89</p>
                 </div>
               </div>
             </div>
-            <div className="mb-10 md:mb-12">
+            <div className="mb-10 md:mb-12 sm:ml-10">
               <div className="flex items-start">
                 <div className="shrink-0">
                   <div className="p-4 bg-purple-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
@@ -77,9 +77,9 @@ function Contact() {
                     </svg>
                   </div>
                 </div>
-                <div className="grow ml-6">
-                  <p className="font-bold mb-1 text-purple-500">Sales questions</p>
-                  <p className="text-slate-200">sales@example.com</p>
+                <div className="grow ml-6 ">
+                  <p className="font-bold mb-1 text-purple-500">Müştəri xidmətləri</p>
+                  <p className="text-slate-200">aorus@salessuport.com</p>
                   <p className="text-slate-400">+1 234-567-89</p>
                 </div>
               </div>
@@ -106,13 +106,13 @@ function Contact() {
                   </div>
                 </div>
                 <div className="grow ml-6">
-                  <p className="font-bold mb-1 text-purple-500">Press</p>
-                  <p className="text-slate-200">press@example.com</p>
+                  <p className="font-bold mb-1 text-purple-500">Sifariş</p>
+                  <p className="text-slate-200">aros@ordersupport.com</p>
                   <p className="text-slate-400">+1 234-567-89</p>
                 </div>
               </div>
             </div>
-            <div className="mb-10 md:mb-12">
+            <div className="mb-10 md:mb-12 sm:ml-10">
               <div className="flex align-start">
                 <div className="shrink-0">
                   <div className="p-4 bg-purple-600 rounded-md shadow-md w-14 h-14 flex items-center justify-center">
@@ -134,8 +134,8 @@ function Contact() {
                   </div>
                 </div>
                 <div className="grow ml-6">
-                  <p className="font-bold mb-1 text-purple-500">Bug report</p>
-                  <p className="text-slate-200">bugs@example.com</p>
+                  <p className="font-bold mb-1 text-purple-500">Bug bildirmək</p>
+                  <p className="text-slate-200">aorus@bugsupport.com</p>
                   <p className="text-slate-400">+1 234-567-89</p>
                 </div>
               </div>

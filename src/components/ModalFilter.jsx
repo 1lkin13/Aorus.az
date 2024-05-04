@@ -50,18 +50,18 @@ const ModalFilter = ({ products, applyFilters }) => {
 
   return (
     < div className="">
-     <button onClick={openModal} className=" right-0 mr-1 inline-flex h-12 items-center justify-center rounded-lg  bg-purple-700  px-6 font-medium text-white focus:ring-4 hover:bg-gray-700">
+     <button onClick={openModal} className=" right-0 mr-1 inline-flex h-12 items-center mb-3 sm:mb-0 justify-center rounded-lg  bg-purple-700  px-6 font-medium text-white focus:ring-4 hover:bg-gray-700">
   Filtirləmə
 </button>
 
       {showModal && (
-        <div className="fixed z-10 inset-0 overflow-y-auto">
+        <div className="fixed  z-10 inset-0 overflow-y-auto">
           <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
             <div className="fixed inset-0 transition-opacity" aria-hidden="true">
               <div className="absolute inset-0 bg-gray-500 opacity-75"></div>
             </div>
             <span className="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
-            <div className="inline-block align-bottom dark:bg-gray-800  rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+            <div className="inline-block align-bottom dark:bg-gray-800 w-full rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
               <div className="dark:bg-gray-800  px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                 <div className="sm:flex  flex-wrap sm:items-start">
                   <div className="mt-3 w-full text-center sm:mt-0 sm:ml-4 sm:text-left">
@@ -74,12 +74,13 @@ const ModalFilter = ({ products, applyFilters }) => {
                       </label>
                       <select
                         id="selectProcessor"
-                        className="mt-2 block w-full rounded-md border cursor-pointer border-purple-200 px-2 py-2 shadow-sm outline-none focus:border-purple-500 focus:ring focus:ring-purple-300 focus:ring-opacity-50"
+                        className="mt-2 block w-full rounded-md border text-sm cursor-pointer border-purple-200 px-2 py-2 shadow-sm outline-none focus:border-purple-500 focus:ring focus:ring-purple-300 focus:ring-opacity-50"
                         value={selectedProcessor}
                         onChange={(e) => setSelectedProcessor(e.target.value)}
+                        
                       >
-                        <option value="" >Hamısı</option>
-                        <option value="Intel">Intel</option>
+                        <option className=""   value="" >Hamısı</option>
+                        <option  value="Intel">Intel</option>
                         <option value="AMD Ryzen">AMD Ryzen</option>
                       </select>
                     </div>

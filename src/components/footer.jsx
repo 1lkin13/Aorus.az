@@ -1,19 +1,21 @@
 import React from "react";
 import logo from "../assets/images/aoruslogo.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div >
-      <footer className="border-t-2 bg-black text-white border-purple-600 shadow-md">
-        <div className="mx-auto grid   max-w-screen-xl gap-y-8 gap-x-12 px-4 py-10 sm:px-20 md:grid-cols-2 xl:grid-cols-4 xl:px-10">
-          <div className="max-w-sm">
-            <div className="mb-6 flex h-10 items-center space-x-2">
+    <div className="w-full " >
+      <footer className="border-t-2  m-0 w-full bg-black text-white border-purple-600 shadow-md">
+        <div className="mx-auto flex justify-between flex-wrap sm:flex-nowrap max-w-screen-xl gap-y-8 gap-x-12 px-4 py-10 sm:px-20 md:grid-cols-2 xl:grid-cols-4 xl:px-10">
+          <div className="max-w-sm text-center sm:text-start">
+            <div className="mb-6 flex h-10 items-center justify-center mr-5 space-x-2   sm:justify-start">
               <img className="h-full object-contain" src={logo} alt="" />
             </div>
             <div className=" text-m text-purple-400">
             Aourus Azərbaycanda İxtisaslaşmış Elektronika Mağazasıdır.Elektronika xəyallarınızdakı dostunuzuq!
             </div>
           </div>
+          <div className="flex justify-around w-full  ">
           <div className="">
             <div className="mt-4 mb-2 font-medium xl:mb-4">Guides</div>
             <nav aria-label="Guides Navigation" className="text-purple-400">
@@ -30,7 +32,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a className="hover:text-blue-600 hover:underline" href="#">
-                    Getting help from the community
+                    Getting help
                   </a>
                 </li>
                 <li>
@@ -73,8 +75,9 @@ const Footer = () => {
               </ul>
             </nav>
           </div>
-          <div className="">
-            <div className="mt-4 mb-2 font-medium xl:mb-4 text-center">
+          </div>
+          <div className=" sm:w-[500px] sm:m-0 m-auto">
+            <div className="mt-4 mb-4 font-medium xl:mb-4 text-center">
              Sosial Mediadan Bizi İzləyin
             </div>
             <div className="flex flex-col">
@@ -114,7 +117,7 @@ const Footer = () => {
         <div className="border-t border-purple-400">
           <div className="mx-auto flex max-w-screen-xl flex-col gap-y-4 px-4 py-3 text-center text-slate-100 sm:px-20 lg:flex-row lg:justify-between lg:text-left xl:px-10">
             <p className="">© 2024 Aourus | Bütün müəllif hüquqları qorunur</p>
-            <p className="-order-1 sm:order-none">Made with ❤️ 1lkin13</p>
+       <Link to="https://www.linkedin.com/in/ilkin-emiraslanov-598317249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><p className="-order-1 sm:order-none cursor-pointer">Made with ❤️ 1lkin13</p></Link>  
          
           </div>
         </div>

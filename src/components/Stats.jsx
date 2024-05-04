@@ -11,11 +11,11 @@ function Stats() {
     </div>
     <div className="mx-auto px-4 sm:px-6 lg:px-8">
      
-        <h3 className="font-semibold  sm:text-center text-gray-900 text-3xl ">
+        <h3 className="font-semibold  pt-10 text-center text-gray-900 text-3xl ">
           Biz 
           sürətlə böyüyürük
         </h3>
-        <hr className="mt-4 h-1.5 w-32 border-none bg-purple-600 sm:mx-auto sm:mt-8" />
+        <hr className="mt-4 h-1.5 w-32 border-none m-auto bg-purple-600 sm:mx-auto sm:mt-8" />
       
       <div className="mx-auto mt-20 grid max-w-screen-lg grid-cols-1 gap-x-8 gap-y-12 text-center sm:text-left md:grid-cols-3">
         <div className="backdrop-blur-lg relative mb-3 rounded-3xl border bg-white/70 px-12 py-10 text-left shadow lg:px-12">

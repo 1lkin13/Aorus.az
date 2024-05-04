@@ -40,7 +40,7 @@ const Review = () => {
   }
 
   return (
-    <article className="mt-10 review ">
+    <article className="mt-16 mb-16 review w-full sm:w-[550px] ">
       <div className="img-container">
         <img src={image} alt={name} className="person-img" />
         <span className="quote-icon">

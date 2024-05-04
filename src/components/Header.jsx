@@ -37,8 +37,7 @@ function Header() {
             </div>
           </div>
         </div>
-        {/* /Left Column */}
-        {/* Right Column */}
+       
         <div className="flex h-full w-full space-x-3 overflow-hidden md:justify-end pt-6 lg:px-2 ">
           {/* Col 2 */}
           <div className="my-auto hidden w-56 flex-col space-y-3 md:mt-20 lg:flex">
