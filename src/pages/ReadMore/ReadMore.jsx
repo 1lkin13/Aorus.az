@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Footer from "../../components/footer";
+import { axiosInstance, baseURL } from "../../../src/env.js"
 
 
 const ReadMore = () => {
@@ -13,13 +14,14 @@ const ReadMore = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await fetch('https://json-server-rouge-one.vercel.app/products');
+        const response = await fetch( baseURL+'/products');
         if (!response.ok) {
           throw new Error('Veri getirme hatası: ' + response.status);
         }
         const data = await response.json();
-        console.log("id budur" + id);
-        const foundProduct = data.products.find((item) => item.id === id);
+        console.log("id budur"+id)
+  
+        const foundProduct = data.find((item) => item.id === id);
         
         if (!foundProduct) {
           throw new Error('Ürün bulunamadı');
