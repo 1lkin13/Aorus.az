@@ -13,7 +13,7 @@ const ReadMore = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await fetch('database.json');
+        const response = await fetch('https://json-server-rouge-one.vercel.app/products');
         if (!response.ok) {
           throw new Error('Veri getirme hatası: ' + response.status);
         }
