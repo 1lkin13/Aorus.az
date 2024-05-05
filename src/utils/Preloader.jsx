@@ -14,7 +14,7 @@ const Preloader = ({ children }) => {
   }, [loading]);
   return loading ? (
     <div className={`preloader ${"show"}`}>
-      <div className="svg-container w-72">
+      <div className="svg-container w-72 mr-5">
         <img src={loader} alt="Loading..." className="loader-svg" />
       </div>
     </div>
