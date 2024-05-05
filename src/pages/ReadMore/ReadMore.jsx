@@ -13,7 +13,7 @@ const ReadMore = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await fetch('/DB/database.json');
+        const response = await fetch('database.json');
         if (!response.ok) {
           throw new Error('Veri getirme hatası: ' + response.status);
         }
