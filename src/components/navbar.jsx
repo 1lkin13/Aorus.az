@@ -98,7 +98,7 @@ const Navbar = () => {
               to={link.value}
               onClick={closeNav}
               className={({ isActive, isPending }) =>
-                `  font-semibold block rounded-md text-center hover:bg-white hover:text-purple-900 text-purple-400 m-auto px-3 py-2 text-base  ${
+                `  font-semibold block rounded-md text-center w-32 hover:bg-white hover:text-purple-900 text-purple-400 m-auto px-3 py-2 text-base  ${
                   isPending
                     ? "pending"
                     : isActive
