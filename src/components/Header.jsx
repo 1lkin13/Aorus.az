@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Header() {
   return (
@@ -26,13 +27,13 @@ function Header() {
               </p>
             </div>
             <div className="flex items-center">
-              <a
-                href="/"
+              <Link
+                to="/about"
                 className="mr-6 inline-flex h-12 items-center justify-center rounded bg-purple-600 px-6 font-medium tracking-wide text-white shadow-md outline-none transition duration-200 hover:bg-purple-900 focus:ring"
               >
               
                Haqqımızda
-              </a>
+              </Link>
              
             </div>
           </div>

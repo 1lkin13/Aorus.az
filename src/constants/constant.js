@@ -1,8 +1,8 @@
 export const NavbarLinks = [
-  { value: "/", label: "Home" },
-  { value: "/about", label: "About" },
-  { value: "/contact", label: "Contact" },
-  { value: "/productspage", label: "Products" },
+  { value: "/", label: "Ana Səhifə" },
+  { value: "/about", label: "Haqqımızda" },
+  { value: "/productspage", label: "Məhsullar" },
+  { value: "/contact", label: "Əlaqə" },
   // { value: "/admin", label: "Admin" },
   // { value: "/login", label: "Login" },
 ];

@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import Footer from "../../components/footer";
 import { axiosInstance, baseURL } from "../../../src/env.js"
@@ -98,9 +99,9 @@ const ReadMore = () => {
             </div>
             <div className="flex items-center justify-start mt-5">
               <span className="mr-10 title-font font-medium text-2xl text-gray-900">{product.price} Azn</span>
-              <button className="flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded">
+            <Link to='https://wa.me/+994557502004'> <button className="flex text-white bg-purple-500 border-0 py-2 px-6 focus:outline-none hover:bg-purple-600 rounded">
                 Sifariş Et
-              </button>
+              </button></Link> 
             </div>
           </div>
         </div>

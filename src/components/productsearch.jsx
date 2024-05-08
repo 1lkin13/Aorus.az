@@ -39,13 +39,13 @@ const Productsearch = ({ onSearch }) => {
           value={searchTerm}
           onChange={handleSearchChange}
           className="h-14 w-full rounded-md py-4 pr-40 pl-12 outline-none focus:ring-2"
-          placeholder="Notebook, Monitor, Kablo:"
+          placeholder="Gaming, VideoCard, CPU:"
         />
         <button
           type="submit"
           className="absolute right-0 mr-1 inline-flex h-12 items-center justify-center rounded-lg bg-gray-900 px-6 font-medium text-white focus:ring-4 hover:bg-gray-700"
         >
-          Search
+          Axtar
         </button>
       </form>
     </div>

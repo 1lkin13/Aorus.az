@@ -32,19 +32,19 @@ export default function Slide() {
       >
         <SwiperSlide>
           {" "}
-          <img src="https://i.redd.it/ltdf5jksp36b1.jpg" alt="" />
+          <img src="https://cdn.mos.cms.futurecdn.net/rFGH9GALVrnscxkuzfEkfW-1200-80.jpg" alt="" />
         </SwiperSlide>
         <SwiperSlide>
           {" "}
           <img
-            src="https://global.aorus.com/upload/Admin/images/01(4).jpg"
+            src="https://i.ytimg.com/vi/3CA1FLZAE18/maxresdefault.jpg"
             alt=""
           />
         </SwiperSlide>
         <SwiperSlide>
           {" "}
           <img
-            src="https://global.aorus.com/upload/Admin/images/01(4).jpg"
+            src="https://cf-images.us-east-1.prod.boltdns.net/v1/static/734546229001/869bfaca-9962-4ad1-892e-61110c5407c9/2212939c-5b90-4be2-9cee-673c290b8a1a/1920x1080/match/image.jpg"
             alt=""
           />
         </SwiperSlide>

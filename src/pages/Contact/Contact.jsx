@@ -11,7 +11,7 @@ function Contact() {
   <div className="container  pt-24 py-12 mx-auto px-4 md:px-6 lg:px-12 dark:bg-gray-900">
     {/*Section: Design Block*/}
     <section className="sm:mb-20 text-gray-800">
-      <h3 className="text-5xl font-bold text-center mb-4 text-white">Contact</h3>
+      <h3 className="text-5xl font-bold text-center mb-4 text-white">Əlaqə</h3>
       <p className="text-center text-slate-200 mb-10 md:mb-12 mx-auto max-w-3xl">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit qui eveniet
         quibusdam molestias quis dolor nostrum, dolores aut esse explicabo
@@ -20,7 +20,7 @@ function Contact() {
       <div className="md:flex md:flex-wrap ">
         <div className="xl:w-6/12 md:w-7/12 mb-6 lg:mb-0 md:pr-3">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12094.57348593182!2d-74.00599512526003!3d40.72586666928451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598f988156a9%3A0xd54629bdf9d61d68!2sBroadway-Lafayette%20St!5e0!3m2!1spl!2spl!4v1624523797308!5m2!1spl!2spl"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12156.85221954081!2d49.8463182!3d40.3819704!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307dd61a05f14f%3A0xd3959d68c231dae!2sAorus.az!5e0!3m2!1sen!2saz!4v1715198620087!5m2!1sen!2saz" 
             className="h-80 w-full border-0 rounded-lg shadow-lg"
             allowFullScreen=""
             loading="lazy"
