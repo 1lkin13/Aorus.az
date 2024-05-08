@@ -8,10 +8,10 @@ export default function LoginPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (username === "adminpanel@gmail.com" && password === "Arzu1992") {
-      window.location.href = "/admin"; // JavaScript ile yönlendirme
+    if (username === "adminpanel@gmail.com" && password === "Aorus2027") {
+      window.location.href = "/admin"; 
     } else if (username !== "admin@gmail.com") {
-      setError("İstifadəçi adı yanlışdır.");
+      setError("İstifadəçi adı və ya şifrə yanlışdır.");
     } else {
       setError("Şifrə yanlışdır.");
     }
