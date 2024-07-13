@@ -14,7 +14,7 @@ const constantReview = [
     name: 'Ziya Axundov',
     job: 'Web Developer',
     image:
-      'https://media.licdn.com/dms/image/D4E03AQEGQ_v5xCWKPA/profile-displayphoto-shrink_800_800/0/1708848365870?e=2147483647&v=beta&t=eeot3W4ynJQ0YIjHGRe9KZJJRDhF191P4ZdwvuZOq1Y',
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMrpU2BO16MRzYCZDFoF7i5d1GK3KeLEZzkg&s',
     text:" Uzun müddətdir ki, proqramlaşdırma üçün notebook axtarırdım.Bütün istəklərimi qarşılaşdırdım və ən ideal modeli buradan tapdım.Təşəkkürlər"
   },
   {

@@ -117,7 +117,7 @@ const Footer = () => {
         <div className="border-t border-purple-400">
           <div className="mx-auto flex max-w-screen-xl flex-col gap-y-4 px-4 py-3 text-center text-slate-100 sm:px-20 lg:flex-row lg:justify-between lg:text-left xl:px-10">
             <p className="">© 2024 Aourus | Bütün müəllif hüquqları qorunur</p>
-       <Link to="https://www.linkedin.com/in/ilkin-emiraslanov-598317249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><p className="-order-1 sm:order-none cursor-pointer">Made with ❤️ 1lkin13</p></Link>  
+       <Link to="https://www.linkedin.com/in/ilkin-emiraslanov-59b401223?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><p className="-order-1 sm:order-none cursor-pointer">Made with ❤️ 1lkin13</p></Link>  
          
           </div>
         </div>

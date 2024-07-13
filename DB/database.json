@@ -70,13 +70,13 @@
       "id": "e0f6",
       "title": "MSI Sword 15 A12VE-1400US Gamig Laptop",
       "price": "2299",
-      "discountedPrice": "2199",
+      "discountedPrice": "2450",
       "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/25070093-d6b4-4cba-9f5a-093e1a14d37e.webp",
       "additionalImages": [
         "https://deltastorephotos.s3.eu-central-1.amazonaws.com/bc15552c-701e-4024-b066-e0c0914ffac2.webp",
         "https://deltastorephotos.s3.eu-central-1.amazonaws.com/4aa93cda-6911-4206-8566-ccdba89a70bb.webp"
       ],
-      "stock": false,
+      "stock": true,
       "CPU": "Intel® Core™ i7-12650H",
       "RAM": "16 GB DDR5 4800MHz",
       "SSD": "512 GB M.2 NVMe™ PCIe®",
@@ -263,6 +263,28 @@
       "processor": "Intel",
       "type": "Dizayn",
       "videocard": "RTX 4090"
+    },
+    {
+      "id": "0772",
+      "title": "Lenovo Slim 7 14IRP8 83A40004US",
+      "price": "1498",
+      "discountedPrice": "1300",
+      "image": "https://deltastorephotos.s3.eu-central-1.amazonaws.com/Lenovo-Slim-7-14IRP8_1w2OMt.webp",
+      "additionalImages": [
+        "https://deltastorephotos.s3.eu-central-1.amazonaws.com/Lenovo-Slim-7-14IRP8_5HTfP8.webp",
+        " https://deltastorephotos.s3.eu-central-1.amazonaws.com/Lenovo-Slim-7-14IRP8_6txPZT.webp"
+      ],
+      "stock": true,
+      "CPU": " Intel® Core™ i7-12700H",
+      "RAM": "16 GB DDR5 4800MHz",
+      "SSD": "512 GB M.2 NVMe™ PCIe®",
+      "GFX": "NVIDIA GeForce RTX 4050 6GB",
+      "LCD": "15.6\" FHD (1920 x 1080) IPS",
+      "OS": "Windows 11 Home",
+      "model": "Lenovo",
+      "processor": "Intel",
+      "type": "Business",
+      "videocard": "Digər"
     }
   ]
 }
