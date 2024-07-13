@@ -20,7 +20,6 @@ const ReadMore = () => {
           throw new Error('Veri getirme hatası: ' + response.status);
         }
         const data = await response.json();
-        console.log("id budur"+id)
   
         const foundProduct = data.find((item) => item.id === id);
         
